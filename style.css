@@ -125,6 +125,60 @@ body {
   background-color: #2c2c2c; /* Color of the separator */
   margin: 20px 0; /* Space above and below the separator */
 }
+/* Ensure the container has a fixed size and relative positioning */
+.snake-game-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #2f4f2f; /* Grass-like background */
+  overflow: hidden;
+  border: 1px solid #000; /* Optional: to visualize the container */
+}
+
+/* Create the snake */
+.snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%; /* Round shape */
+  animation: moveSnake 5s linear infinite;
+}
+
+/* Keyframes for the snake's movement */
+@keyframes moveSnake {
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+  25% {
+    top: 30%;
+    left: 50%;
+  }
+  50% {
+    top: 70%;
+    left: 80%;
+  }
+  75% {
+    top: 50%;
+    left: 20%;
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+
+/* Optional: Add more snakes or customize with random animations */
+.snake:nth-child(2) {
+  animation: moveSnake 6s linear infinite;
+  background-color: darkgreen; /* Slightly different color for variation */
+}
+
+.snake:nth-child(3) {
+  animation: moveSnake 7s linear infinite;
+  background-color: limegreen; /* Another variation */
+}
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -356,30 +410,115 @@ body {
   animation-delay: 2.5s;
   transform: translateX(100px); /* Move to right initially */
 }
-/* Add animation for new tech items */
+
+.tech-item-7 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3s;
+  transform: translateX(-100px); /* Move to left initially */
+}
+
+.tech-item-8 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 3.5s;
+  transform: translateY(-100px); /* Move up initially */
+}
+
 .tech-item-9 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 3s; /* Adjust the delay as needed */
-  transform: translateX(-100px); /* Move to left initially */
+  animation-delay: 4s;
+  transform: translateX(100px); /* Move to right initially */
 }
 
 .tech-item-10 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 3.5s; /* Adjust the delay as needed */
-  transform: translateY(-100px); /* Move up initially */
+  animation-delay: 4.5s;
+  transform: translateY(100px); /* Move down initially */
 }
 
 .tech-item-11 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 4s; /* Adjust the delay as needed */
-  transform: translateX(100px); /* Move to right initially */
+  animation-delay: 5s;
+  transform: translateX(-100px); /* Move to left initially */
 }
 
 .tech-item-12 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 4.5s; /* Adjust the delay as needed */
+  animation-delay: 5.5s;
+  transform: translateY(-100px); /* Move up initially */
+}
+
+.tech-item-13 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 6s;
+  transform: translateX(100px); /* Move to right initially */
+}
+
+.tech-item-14 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 6.5s;
   transform: translateY(100px); /* Move down initially */
 }
+
+.tech-item-15 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 7s;
+  transform: translateX(-100px); /* Move to left initially */
+}
+
+.tech-item-16 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 7.5s;
+  transform: translateY(-100px); /* Move up initially */
+}
+
+.tech-item-17 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 8s;
+  transform: translateX(100px); /* Move to right initially */
+}
+
+.tech-item-18 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 8.5s;
+  transform: translateY(100px); /* Move down initially */
+}
+
+.tech-item-19 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 9s;
+  transform: translateX(-100px); /* Move to left initially */
+}
+
+.tech-item-20 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 9.5s;
+  transform: translateY(-100px); /* Move up initially */
+}
+
+.tech-item-21 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 10s;
+  transform: translateX(100px); /* Move to right initially */
+}
+
+.tech-item-22 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 10.5s;
+  transform: translateY(100px); /* Move down initially */
+}
+
+.tech-item-23 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 11s;
+  transform: translateX(-100px); /* Move to left initially */
+}
+
+.tech-item-24 {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 11.5s;
+  transform: translateY(-100px); /* Move up initially */
+}
+
 /* Button Container for Centering */
 .button-container {
   display: flex;
