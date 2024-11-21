@@ -177,7 +177,7 @@ body {
 /* Ensure smooth separation line */
 .project-separator {
   margin-top: 20px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: none; /* Make the separator invisible */
   margin-bottom: 20px;
 }
 
