@@ -137,13 +137,6 @@ body {
   transform: scale(1.2);
 }
 
-/* Ensure smooth separation line */
-.project-separator {
-  margin-top: 20px;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 20px;
-}
-
 /* Tech tags styling */
 .technologies .tech-tag {
   display: inline-block;
@@ -172,13 +165,6 @@ body {
 /* Hover effect on the play icon */
 .project-item:hover .play-icon {
   transform: scale(1.2);
-}
-
-/* Ensure smooth separation line */
-.project-separator {
-  margin-top: 20px;
-  border-bottom: none; /* Make the separator invisible */
-  margin-bottom: 20px;
 }
 
 /* Tech tags styling */
