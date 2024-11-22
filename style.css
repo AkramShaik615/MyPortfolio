@@ -133,8 +133,17 @@ body {
   max-width: 500px; /* Maximum width to maintain a consistent look */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   position: relative; /* Ensure position for icons */
-  transition: transform 0.2s, background-color 0.2s, border 0.3s; /* Smooth transition */
+  transition: transform 0.2s, background-color 0.2s, border 0.3s, box-shadow 0.3s; /* Smooth transition */
   text-align: center; /* Center the content inside each project item */
+}
+
+/* Hover effect for project items */
+.project-item:hover {
+  background-color: #2e2e2e; /* Darker shade on hover */
+  transform: scale(1.12); /* Slight scale up */
+  border: 2px solid transparent; /* Transparent border initially */
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Rainbow border */
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6), 0 0 8px rgba(255, 165, 0, 0.6), 0 0 8px rgba(255, 255, 0, 0.6), 0 0 8px rgba(0, 255, 0, 0.6), 0 0 8px rgba(0, 0, 255, 0.6), 0 0 8px rgba(75, 0, 130, 0.6), 0 0 8px rgba(238, 130, 238, 0.6); /* Glowing effect with rainbow colors */
 }
 
 /* Icon Styling */
@@ -159,13 +168,6 @@ body {
 .project-title {
   font-size: 1.5rem; /* Title size */
   margin-top: 10px; /* Space for the title */
-}
-
-/* Hover effect for project items */
-.project-item:hover {
-  background-color: #2e2e2e; /* Darker shade on hover */
-  transform: scale(1.02); /* Slight scale up */
-  border: 2px solid #0073b1; /* Add border on hover */
 }
 
 /* Separator for Projects */
@@ -251,7 +253,16 @@ body {
   width: 100%; /* Full width */
   max-width: 500px; /* Maximum width */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s, background-color 0.2s, border 0.3s; /* Smooth transition */
+  transition: transform 0.2s, background-color 0.2s, border 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for experience items */
+.experience-item:hover {
+  background-color: #2e2e2e; /* Darker shade on hover */
+  transform: scale(1.02); /* Slight scale up */
+  border: 2px solid transparent; /* Transparent border initially */
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Rainbow border */
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6), 0 0 8px rgba(255, 165, 0, 0.6), 0 0 8px rgba(255, 255, 0, 0.6), 0 0 8px rgba(0, 255, 0, 0.6), 0 0 8px rgba(0, 0, 255, 0.6), 0 0 8px rgba(75, 0, 130, 0.6), 0 0 8px rgba(238, 130, 238, 0.6); /* Glowing effect with rainbow colors */
 }
 
 /* Year Styling */
@@ -263,13 +274,6 @@ body {
 
 .experience-details {
   margin-top: 16px; /* Space above details */
-}
-
-/* Hover effect for experience items */
-.experience-item:hover {
-  background-color: #2e2e2e; /* Darker shade on hover */
-  transform: scale(1.02); /* Slight scale up */
-  border: 2px solid #0073b1; /* Add border on hover */
 }
 
 /* Details Styling */
