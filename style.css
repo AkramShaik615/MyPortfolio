@@ -162,7 +162,7 @@ body {
     flex-wrap: wrap; /* Allow wrapping for items */
     justify-content: center; /* Center the items in the row */
   }
-
+}
 /* Styling for the play icon */
 .play-icon {
   font-size: 20px;
@@ -196,7 +196,7 @@ body {
     width: calc(50% - 40px); /* Two items per row with gap */
     margin: 10px; /* Space around each project item */
   }
-}
+
 
 
 /* Experience Section Styling */
