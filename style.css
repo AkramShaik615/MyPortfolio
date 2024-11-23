@@ -162,10 +162,6 @@ body {
   .bottombar i {
     font-size: 1.5rem;
   }
-
-  .footer-text {
-    font-size: 0.875rem;
-  }
 }
 
 /* Animation to show each letter one by one */
@@ -792,9 +788,10 @@ header svg {
     height: 100vh; /* Slightly larger for larger screens */
   }
 }
+
 /* Footer Text Styles */
 .footer-text {
-  position: fixed; /* Keeps it at the bottom */
+  position: relative; /* Keeps it at the bottom */
   bottom: 10px; /* Adjust the distance from the bottom */
   left: 50%; /* Moves it to the center horizontally */
   transform: translateX(-50%); /* Offsets the element by 50% of its width to truly center it */
