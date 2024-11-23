@@ -8,7 +8,7 @@ body {
 
 /* Navbar */
 .navbar {
-  position: fixed; /* Fixes the navbar at the top-right corner */
+  position: relative; /* Fixes the navbar at the top-right corner */
   top: 0;
   right: 0;
   display: flex;
@@ -54,40 +54,24 @@ body {
   background-color: #000; /* Ensures background matches the portfolio */
 }
 
-.bottombar {
-  position: fixed; /* Fixed position to stick at the bottom */
-  bottom: 10px; /* Adjust the distance from the bottom of the viewport */
-  left: 50%; /* Center it horizontally */
-  transform: translateX(-50%); /* Center it fully by shifting half of its width */
-  text-align: center; /* Center the content within the bar */
-  background-color: #2c2c2c; /* Dark background for the bar */
-  color: #fff; /* Text color */
-  font-size: 1rem; /* Font size for text */
-  padding: 10px 20px; /* Padding for spacing inside the bar */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  z-index: 1000; /* Keep it above other elements */
-  width: auto; /* Allow width to fit content naturally */
-  max-width: 90%; /* Prevent it from becoming too wide */
-}
-
 /* Bottom Bar Styles - Fixed at the Bottom-Center */
 .bottombar {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  font-size: 2rem;
-  background-color: #2c2c2c;
-  padding: 10px 20px;
-  z-index: 1000;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: relative; /* Fixes the bar to the viewport */
+  bottom: 0; /* Positions the bar at the bottom of the screen */
+  left: 50%; /* Centers the bar horizontally */
+  transform: translateX(-50%); /* Adjusts for centering alignment */
+  display: flex; /* Enables flexbox for layout */
+  flex-direction: row; /* Aligns items in a horizontal row */
+  justify-content: center; /* Centers the items horizontally within the bar */
+  align-items: center; /* Aligns the items vertically within the bar */
+  gap: 16px; /* Adds spacing between items */
+  font-size: 2rem; /* Sets the font size for icons or links */
+  padding: 10px 20px; /* Adds padding for a comfortable look */
+  z-index: 1000; /* Ensures it stays above other elements */
+  border-radius: 10px 10px 0 0; /* Adds rounded corners at the top */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  width: auto; /* Adjusts width to fit content */
+  min-width: 300px; /* Optional: Ensures a minimum width for aesthetics */
 }
 
 /* Bottom Bar Link Styles */
