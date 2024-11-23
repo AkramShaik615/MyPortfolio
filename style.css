@@ -8,7 +8,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  position: fixed; /* Fixes the navbar to the viewport */
+  position: relative; /* Fixes the navbar to the viewport */
   top: 0; /* Aligns the navbar to the top of the page */
   right: 0; /* Aligns the navbar to the right side */
   display: flex;
@@ -74,7 +74,7 @@ body {
 
 /* Bottom Bar Styles */
 .bottombar {
-  position: fixed; /* Fixes the bottombar to the viewport */
+  position: relative; /* Fixes the bottombar to the viewport */
   bottom: 0; /* Aligns the bottombar to the bottom of the page */
   left: 50%; /* Start positioning from the horizontal center */
   transform: translateX(-50%); /* Adjust position to truly center the bottombar */
