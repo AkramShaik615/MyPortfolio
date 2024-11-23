@@ -11,6 +11,8 @@ body {
   position: relative; /* Ensures the navbar stays fixed at a specific position */
   top: 0; /* Positions the navbar at the top of the viewport */
   right: 0; /* Positions the navbar at the right edge of the viewport */
+  left: 0;
+  bottom: 0;
   display: flex; /* Enables flexbox for layout */
   flex-direction: column; /* Aligns items in a vertical column */
   justify-content: flex-start; /* Aligns items starting from the top */
