@@ -46,33 +46,35 @@ body {
   color: #333; /* Color for the chat icon */
 }
 
-/* Content Adjustment for Body */
-body {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  padding-right: 80px; /* Adjusts space for the fixed navbar */
-}
-
 /* Bottom Bar Styles - Fixed at the Bottom-Center */
 .bottombar {
   position: relative; /* Fixes the bar to the viewport */
-  bottom: 0; /* Positions the bar at the bottom of the screen */
+  bottom: 0; /* Anchors it to the bottom of the screen */
   left: 50%; /* Centers the bar horizontally */
   transform: translateX(-50%); /* Adjusts for centering alignment */
   display: flex; /* Enables flexbox for layout */
   flex-direction: row; /* Aligns items in a horizontal row */
-  justify-content: center; /* Centers the items horizontally within the bar */
-  align-items: center; /* Aligns the items vertically within the bar */
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Aligns the items vertically */
   gap: 16px; /* Adds spacing between items */
   font-size: 2rem; /* Sets the font size for icons or links */
   padding: 10px 20px; /* Adds padding for a comfortable look */
-  z-index: 1000; /* Ensures it stays above other elements */
+  z-index: 999; /* Ensures it stays above most other elements */
   border-radius: 10px 10px 0 0; /* Adds rounded corners at the top */
+  background-color: #000; /* Matches the body background */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
   width: auto; /* Adjusts width to fit content */
   min-width: 300px; /* Optional: Ensures a minimum width for aesthetics */
 }
 
+/* Content Adjustment for Body */
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  padding-right: 80px; /* Adds space for the fixed navbar on the right */
+  padding-bottom: 60px; /* Adds space for the fixed bottom bar */
+  background-color: #000; /* Ensures background matches the portfolio */
+}
 /* Bottom Bar Link Styles */
 .bottombar a {
   text-decoration: none;
