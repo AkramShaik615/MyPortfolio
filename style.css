@@ -8,26 +8,27 @@ body {
 
 /* Navbar Styles - Fixed at the Top-Right Corner */
 .navbar {
-  position: relative; /* Fixes the navbar at a specific position */
-  top: 0; /* Anchors it to the top */
-  right: 0; /* Anchors it to the right */
+  position: fixed; /* Ensures the navbar stays fixed at a specific position */
+  top: 0; /* Positions the navbar at the top of the viewport */
+  right: 0; /* Positions the navbar at the right edge of the viewport */
   display: flex; /* Enables flexbox for layout */
   flex-direction: column; /* Aligns items in a vertical column */
-  justify-content: flex-start; /* Aligns items to the top */
-  align-items: flex-end; /* Centers items horizontally */
+  justify-content: flex-start; /* Aligns items starting from the top */
+  align-items: flex-end; /* Aligns items flush to the right */
   gap: 16px; /* Adds spacing between navbar items */
-  font-size: 2rem; /* Font size for icons and links */
-  padding: 10px;
+  font-size: 2rem; /* Sets font size for icons and links */
+  padding: 20px; /* Adds padding around the navbar for better spacing */
   z-index: 1000; /* Ensures the navbar appears on top of other content */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  /* Content Adjustment for Body */
+  background-color: #000; /* Matches the body background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow for separation */
+}
+
+/* Content Adjustment for Body */
 body {
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
-  padding-right: 80px; /* Adds space for the fixed navbar on the right */
-  padding-bottom: 0px; /* Adds space for the fixed bottom bar */
-  background-color: #000; /* Ensures background matches the portfolio */
-}
+  padding-right: 60px; /* Adds space to avoid overlapping with the navbar */
+  background-color: #000; /* Matches the navbar background */
 }
 
 /* Navbar Links */
