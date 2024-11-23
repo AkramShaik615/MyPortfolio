@@ -665,4 +665,15 @@ body {
 .go-to-top:hover svg {
   color: #005bb5;
 }
-/* scroll up code */
+/* scroll up code BELOW 2 CODES ARE FRO hearder */
+header {
+  position: relative; /* Keeps it fixed at the top-left */
+  top: 20px; /* Adjusted distance from the top */
+  left: 20px; /* Adjusted distance from the left */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+header svg {
+  width: 80px; /* Increased size for better visibility */
+  height: 100px;
+}
