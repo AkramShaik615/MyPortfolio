@@ -14,7 +14,7 @@ body {
   display: flex; /* Enables flexbox for layout */
   flex-direction: column; /* Aligns items in a vertical column */
   justify-content: flex-start; /* Aligns items to the top */
-  align-items: center; /* Centers items horizontally */
+  align-items: flex-end; /* Centers items horizontally */
   gap: 16px; /* Adds spacing between navbar items */
   font-size: 2rem; /* Font size for icons and links */
   padding: 10px;
