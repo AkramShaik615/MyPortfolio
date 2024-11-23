@@ -8,7 +8,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  position: fixed; /* Fixes the navbar to the right side */
+  position: relative; /* Fixes the navbar to the right side */
   top: 0; /* Aligns the navbar to the top of the page */
   right: 0; /* Keeps it on the right side */
   display: flex;
@@ -715,7 +715,7 @@ header svg {
 
 /* bottombar Styles */
 .bottombar {
-  position: fixed; /* Ensures the bottombar is fixed to the viewport */
+  position: relative; /* Ensures the bottombar is fixed to the viewport */
   bottom: 0; /* Aligns the bottombar to the bottom of the viewport */
   left: 50%; /* Centers the bottombar horizontally */
   transform: translateX(-50%); /* Adjusts to truly center the bottombar */
