@@ -164,6 +164,14 @@ body {
   }
 }
 
+.center-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if height is defined */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text within the flex container */
+  margin-top: 50px; /* Add some top margin to space it from the navbar */
+}
 /* Animation to show each letter one by one */
 @keyframes revealText {
   0% {
