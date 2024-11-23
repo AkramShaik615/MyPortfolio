@@ -713,12 +713,12 @@ header svg {
   }
 }
 
-/* bottombar Styles */
+/* Bottom Bar Styles */
 .bottombar {
-  position: relative; /* Ensures the bottombar is fixed to the viewport */
-  bottom: 0; /* Aligns the bottombar to the bottom of the viewport */
-  left: 50%; /* Centers the bottombar horizontally */
-  transform: translateX(-50%); /* Adjusts to truly center the bottombar */
+  position: fixed; /* Fixes the bottombar to the viewport */
+  bottom: 0; /* Aligns the bottombar to the bottom of the page */
+  left: 50%; /* Start positioning from the horizontal center */
+  transform: translateX(-50%); /* Adjust position to truly center the bottombar */
   display: flex;
   flex-direction: row; /* Align items horizontally */
   justify-content: center; /* Centers items horizontally */
@@ -730,32 +730,29 @@ header svg {
   z-index: 1000; /* Ensures the navbar stays on top */
   border-radius: 10px 10px 0 0; /* Rounded top edges for visual appeal */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
-  width: auto; /* Adjust the width dynamically based on content */
 }
 
-/* bottombar Links */
+/* Icon Link Styles */
 .bottombar a {
   text-decoration: none;
-  color: inherit; /* Default color */
+  color: inherit; /* Default icon color */
   transition: color 0.3s ease;
 }
 
-/* Icon hover effect */
+/* Icon Hover Effects */
 .bottombar i {
-  font-size: 2rem; /* Adjust icon size */
+  font-size: 2rem; /* Icon size */
   transition: color 0.3s ease;
 }
 
 .bottombar a:hover i {
-  color: #0073b1; /* LinkedIn Blue on hover */
+  color: #0073b1; /* Default hover color (LinkedIn blue) */
 }
 
-/* Instagram icon hover color change */
 .bottombar i.fa-instagram:hover {
   color: red; /* Instagram red */
 }
 
-/* Hover effects for individual icons */
 .bottombar i.fa-envelope:hover {
   color: blue; /* Email icon hover color */
 }
@@ -765,36 +762,22 @@ header svg {
 }
 
 .bottombar i.fa-whatsapp:hover {
-  color: #25D366; /* WhatsApp icon hover color */
+  color: #25D366; /* WhatsApp green */
 }
 
 .bottombar i.fa-telegram:hover {
-  color: #0088cc; /* Telegram icon hover color */
+  color: #0088cc; /* Telegram blue */
 }
 
-/* Centered Content Styles */
-.center-content {
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-direction: column; /* Stack items vertically */
-  text-align: center; /* Center text */
-  margin-top: 50px; /* Space content from navbar */
-  height: calc(100vh - 50px); /* Full height minus navbar height */
-}
-
-/* Additional improvements for responsiveness */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .bottombar {
-    font-size: 1.5rem; /* Adjust font size on smaller screens */
-    gap: 12px; /* Reduced gap between navbar items */
-    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    gap: 12px; /* Reduce gap between icons */
+    padding: 8px 16px; /* Reduce padding */
   }
 
   .bottombar i {
-    font-size: 1.5rem; /* Adjust icon size for smaller screens */
-  }
-
-  .center-content {
-    margin-top: 30px; /* Adjust top margin on smaller screens */
+    font-size: 1.5rem; /* Smaller icon size */
   }
 }
