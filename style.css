@@ -6,54 +6,6 @@ body {
   font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
 
-/* Navbar Styles - Fixed at the Top-Right Corner */
-.navbar {
-  position: fixed; /* Ensures the navbar stays fixed at a specific position */
-  top: 0; /* Positions the navbar at the top of the viewport */
-  right: 0; /* Positions the navbar at the right edge of the viewport */
-  display: flex; /* Enables flexbox for layout */
-  flex-direction: column; /* Aligns items in a vertical column */
-  justify-content: flex-start; /* Aligns items starting from the top */
-  align-items: flex-end; /* Aligns items flush to the right */
-  gap: 16px; /* Adds spacing between navbar items */
-  font-size: 2rem; /* Sets font size for icons and links */
-  padding: 20px; /* Adds padding around the navbar for better spacing */
-  z-index: 1000; /* Ensures the navbar appears on top of other content */
-  background-color: #000; /* Matches the body background */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Adds a stronger shadow for separation */
-}
-
-/* Content Adjustment for Body */
-body {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  padding-right: 60px; /* Adds space to avoid overlapping with the navbar */
-  background-color: #000; /* Matches the navbar background */
-}
-
-/* Navbar Links */
-.navbar a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbar i {
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover i {
-  color: #0073b1; /* LinkedIn Blue */
-}
-
-/* Change Instagram icon color to red */
-.navbar i.fa-instagram:hover {
-  color: red; /* Set the Instagram icon color to red */
-}
-
-.navbar i.fa-comment-alt {
-  color: #333; /* Color for the chat icon */
-}
-
 /* Bottom Bar Styles - Fixed at the Bottom-Center */
 .bottombar {
   position: relative; /* Fixes the bar to the viewport */
