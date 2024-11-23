@@ -8,7 +8,7 @@ body {
 
 /* Navbar Styles - Fixed at the Top-Right Corner */
 .navbar {
-  position: fixed; /* Fixes the navbar at a specific position */
+  position: relative; /* Fixes the navbar at a specific position */
   top: 0; /* Anchors it to the top */
   right: 0; /* Anchors it to the right */
   display: flex; /* Enables flexbox for layout */
@@ -20,7 +20,6 @@ body {
   padding: 10px;
   z-index: 1000; /* Ensures the navbar appears on top of other content */
   height: 100%; /* Navbar spans the full height of the viewport */
-  background-color: #000; /* Matches the body background */
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
@@ -52,7 +51,6 @@ body {
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
   padding-right: 80px; /* Adjusts space for the fixed navbar */
-  background-color: #000; /* Ensures background matches the portfolio */
 }
 
 /* Bottom Bar Styles - Fixed at the Bottom-Center */
