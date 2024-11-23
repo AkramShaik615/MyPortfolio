@@ -598,3 +598,50 @@ body {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
+/* scroll up code */
+.go-to-top {
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.go-to-top:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.go-to-top:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-to-top svg {
+  fill: currentColor;
+  color: #0073e6;
+  transition: color 0.3s;
+}
+
+.go-to-top:hover svg {
+  color: #005bb5;
+}
+/* scroll up code */
