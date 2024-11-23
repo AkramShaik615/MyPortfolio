@@ -112,15 +112,6 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .navbar {
-    font-size: 1.5rem;
-    gap: 12px;
-  }
-
-  .navbar i {
-    font-size: 1.5rem;
-  }
-
   .bottombar {
     font-size: 1.5rem;
     gap: 12px;
