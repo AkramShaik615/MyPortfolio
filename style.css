@@ -19,7 +19,6 @@ body {
   font-size: 2rem; /* Font size for icons and links */
   padding: 10px;
   z-index: 1000; /* Ensures the navbar appears on top of other content */
-  height: 100%; /* Navbar spans the full height of the viewport */
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
@@ -65,6 +64,14 @@ body {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
   width: auto; /* Adjusts width to fit content */
   min-width: 300px; /* Optional: Ensures a minimum width for aesthetics */
+/* Content Adjustment for Body */
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  padding-right: 80px; /* Adds space for the fixed navbar on the right */
+  padding-bottom: 60px; /* Adds space for the fixed bottom bar */
+  background-color: #000; /* Ensures background matches the portfolio */
+}
 }
 
 /* Content Adjustment for Body */
