@@ -6,21 +6,22 @@ body {
   font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
 
-/* Navbar */
+/* Navbar Styles - Fixed at the Top-Right Corner */
 .navbar {
-  position: relative; /* Fixes the navbar at the top-right corner */
-  top: 0;
-  right: 0;
-  display: flex;
+  position: fixed; /* Fixes the navbar at a specific position */
+  top: 0; /* Anchors it to the top */
+  right: 0; /* Anchors it to the right */
+  display: flex; /* Enables flexbox for layout */
   flex-direction: column; /* Aligns items in a vertical column */
-  justify-content: flex-start; /* Align items to the top */
-  align-items: center; /* Center items horizontally */
-  gap: 16px; /* Space between navbar items */
+  justify-content: flex-start; /* Aligns items to the top */
+  align-items: center; /* Centers items horizontally */
+  gap: 16px; /* Adds spacing between navbar items */
   font-size: 2rem; /* Font size for icons and links */
   padding: 10px;
   z-index: 1000; /* Ensures the navbar appears on top of other content */
   height: 100%; /* Navbar spans the full height of the viewport */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for visual separation */
+  background-color: #000; /* Matches the body background */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
 /* Navbar Links */
