@@ -677,6 +677,7 @@ header svg {
   width: 80px; /* Increased size for better visibility */
   height: 100px;
 }
+
 .background-svg {
   position: absolute;
   top: 0;
