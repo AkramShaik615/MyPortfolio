@@ -767,16 +767,9 @@ header svg {
 .bottombar i.fa-telegram:hover {
   color: #0088cc; /* Telegram icon hover color */
 }
-
-/* Content spacing adjustment */
-body {
-  padding-bottom: 70px; /* Ensure content isn't hidden behind fixed navbar */
-  margin: 0; /* Ensure no default margin is interfering */
-}
-
 /* Centered Content Styles */
 .center-content {
-  display: flex;
+ /* display: flex; */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column; /* Stack items vertically */
