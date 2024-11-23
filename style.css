@@ -813,7 +813,6 @@ header svg {
   text-align: center; /* Ensures the text inside is centered */
   color: #fff; /* Text color */
   font-size: 1rem; /* Font size */
-  background-color: #2c2c2c; /* Background color to match your dark theme */
   padding: 10px; /* Adds padding around the text */
   width: auto; /* Ensures it takes only as much width as it needs */
 }
