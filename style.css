@@ -78,6 +78,23 @@ body {
   }
 }
 
+
+/* Additional improvements for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1.5rem; /* Adjust font size on smaller screens */
+    gap: 12px; /* Reduced gap between navbar items */
+  }
+
+  .navbar i {
+    font-size: 1.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .center-content {
+    margin-top: 30px; /* Adjust top margin on smaller screens */
+  }
+}
+
 /* Animation to show each letter one by one */
 @keyframes revealText {
   0% {
