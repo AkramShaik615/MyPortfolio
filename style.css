@@ -8,137 +8,166 @@ body {
 
 /* Navbar Styles - Fixed at the top-right */
 .navbar {
-  position: fixed; /* Fixes navbar to the viewport */
-  top: 0; /* Aligns it at the top of the screen */
-  right: 0; /* Aligns it at the right side of the screen */
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
-  flex-direction: column; /* Align items vertically */
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
   font-size: 2rem;
-  background-color: #2c2c2c; /* Dark background */
+  background-color: #2c2c2c;
   padding: 10px;
-  z-index: 1000; /* Ensures navbar is on top */
-  height: 100%; /* Full height to fill from top to bottom */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds shadow for separation */
+  z-index: 1000;
+  height: 100%;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Link Styles */
 .navbar a {
   text-decoration: none;
-  color: inherit; /* Default color */
+  color: inherit;
   transition: color 0.3s ease;
 }
 
 /* Icon Hover Effect */
 .navbar i {
-  font-size: 2rem; /* Icon size */
+  font-size: 2rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover i {
-  color: #0073b1; /* LinkedIn Blue on hover */
-}
-
-/* Instagram icon hover color */
-.navbar i.fa-instagram:hover {
-  color: red; /* Instagram red */
-}
-
-/* Hover Effects for Other Icons */
-.navbar i.fa-envelope:hover {
-  color: blue; /* Email icon hover color */
-}
-
-.navbar i.fa-whatsapp:hover {
-  color: #25D366; /* WhatsApp icon hover color */
+  color: #0073b1;
 }
 
 /* Content Adjustment for Body */
 body {
-  padding-right: 80px; /* Ensure content isn't hidden behind navbar */
-  margin: 0; /* Reset default margin */
-  padding-top: 50px; /* Prevent content from being hidden under the navbar */
+  padding-right: 80px;
+  margin: 0;
+  padding-top: 50px;
 }
 
 /* Bottom Bar Styles - Fixed at the Bottom-Center */
 .bottombar {
-  position: fixed; /* Fixes the bottom bar to the viewport */
-  bottom: 0; /* Aligns it at the bottom of the screen */
-  left: 50%; /* Positions the bottom bar at the horizontal center */
-  transform: translateX(-50%); /* Corrects the center alignment */
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-direction: row; /* Align items horizontally */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 16px; /* Spacing between the icons */
+  gap: 16px;
   font-size: 2rem;
-  background-color: #2c2c2c; /* Dark background */
-  padding: 10px 20px; /* Padding for better visual appearance */
-  z-index: 1000; /* Keeps the bottom bar above other content */
-  border-radius: 10px 10px 0 0; /* Rounded top edges */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for separation */
+  background-color: #2c2c2c;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Bottom Bar Link Styles */
 .bottombar a {
   text-decoration: none;
-  color: inherit; /* Default color for icons */
+  color: inherit;
   transition: color 0.3s ease;
 }
 
 /* Bottom Bar Icon Hover Effects */
 .bottombar i {
-  font-size: 2rem; /* Icon size */
+  font-size: 2rem;
   transition: color 0.3s ease;
 }
 
 .bottombar a:hover i {
-  color: #0073b1; /* Default hover color (LinkedIn blue) */
+  color: #0073b1;
 }
 
 .bottombar i.fa-instagram:hover {
-  color: red; /* Instagram red */
+  color: red;
 }
 
 .bottombar i.fa-envelope:hover {
-  color: blue; /* Email icon hover color */
+  color: blue;
 }
 
 .bottombar i.fa-phone:hover {
-  color: green; /* Call icon hover color */
+  color: green;
 }
 
 .bottombar i.fa-whatsapp:hover {
-  color: #25D366; /* WhatsApp green */
+  color: #25D366;
 }
 
 .bottombar i.fa-telegram:hover {
-  color: #0088cc; /* Telegram blue */
+  color: #0088cc;
+}
+
+/* Footer Text Styles (Centered) */
+.footer-text {
+  position: fixed;
+  bottom: 70px; /* Position above the bottom bar */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Go to Top Button Styles */
+.go-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 100px; /* Position above the bottom bar */
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 2000; /* Ensure it is above other content */
+}
+
+.go-to-top svg {
+  fill: white;
+}
+
+.go-to-top:hover {
+  background-color: #005f8c;
+}
+
+.go-to-top .tooltip {
+  display: none;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    gap: 12px; /* Reduced gap between navbar items */
+    font-size: 1.5rem;
+    gap: 12px;
   }
 
   .navbar i {
-    font-size: 1.5rem; /* Adjust icon size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .bottombar {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    gap: 12px; /* Reduce gap between icons */
-    padding: 8px 16px; /* Reduce padding */
+    font-size: 1.5rem;
+    gap: 12px;
+    padding: 8px 16px;
   }
 
   .bottombar i {
-    font-size: 1.5rem; /* Smaller icon size */
+    font-size: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.875rem;
   }
 }
+
 /* Animation to show each letter one by one */
 @keyframes revealText {
   0% {
