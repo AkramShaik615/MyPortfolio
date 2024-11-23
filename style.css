@@ -28,25 +28,19 @@ a:hover {
   color: #fff;
 }
 
-/* Bottom Bar Styles - Fixed at the Bottom-Center */
-.bottombar {
-  position: relative; /* Fixes the bar to the viewport */
-  bottom: 0; /* Anchors it to the bottom of the screen */
-  left: 50%; /* Centers the bar horizontally */
-  transform: translateX(-50%); /* Adjusts for centering alignment */
-  display: flex; /* Enables flexbox for layout */
-  flex-direction: row; /* Aligns items in a horizontal row */
-  justify-content: center; /* Centers the items horizontally */
-  align-items: center; /* Aligns the items vertically */
-  gap: 16px; /* Adds spacing between items */
-  font-size: 2rem; /* Sets the font size for icons or links */
-  padding: 10px 20px; /* Adds padding for a comfortable look */
-  z-index: 999; /* Ensures it stays above most other elements */
-  border-radius: 10px 10px 0 0; /* Adds rounded corners at the top */
-  background-color: #000; /* Matches the body background */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-  width: auto; /* Adjusts width to fit content */
-  min-width: 300px; /* Optional: Ensures a minimum width for aesthetics */
+/* Bottom Bar */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;  /* Adjust this width if necessary */
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000; /* Ensure it's on top of other content */
 }
 
 /* Content Adjustment for Body */
