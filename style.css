@@ -8,9 +8,9 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  position: relative; /* Fixes the navbar to the right side */
+  position: fixed; /* Fixes the navbar to the viewport */
   top: 0; /* Aligns the navbar to the top of the page */
-  right: 0; /* Keeps it on the right side */
+  right: 0; /* Aligns the navbar to the right side */
   display: flex;
   flex-direction: column; /* Align items vertically from top to bottom */
   justify-content: flex-start; /* Align items to the top */
@@ -87,6 +87,7 @@ body {
     margin-top: 30px; /* Adjust top margin on smaller screens */
   }
 }
+
 
 /* Animation to show each letter one by one */
 @keyframes revealText {
