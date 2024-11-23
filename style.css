@@ -792,3 +792,16 @@ header svg {
     height: 100vh; /* Slightly larger for larger screens */
   }
 }
+/* Footer Text Styles */
+.footer-text {
+  position: fixed; /* Keeps it at the bottom */
+  bottom: 10px; /* Adjust the distance from the bottom */
+  left: 50%; /* Moves it to the center horizontally */
+  transform: translateX(-50%); /* Offsets the element by 50% of its width to truly center it */
+  text-align: center; /* Ensures the text inside is centered */
+  color: #fff; /* Text color */
+  font-size: 1rem; /* Font size */
+  background-color: #2c2c2c; /* Background color to match your dark theme */
+  padding: 10px; /* Adds padding around the text */
+  width: auto; /* Ensures it takes only as much width as it needs */
+}
