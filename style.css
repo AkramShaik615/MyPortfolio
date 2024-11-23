@@ -8,7 +8,7 @@ body {
 
 /* Navbar Styles - Fixed at the Top-Right Corner */
 .navbar {
-  position: fixed; /* Ensures the navbar stays fixed at a specific position */
+  position: relative; /* Ensures the navbar stays fixed at a specific position */
   top: 0; /* Positions the navbar at the top of the viewport */
   right: 0; /* Positions the navbar at the right edge of the viewport */
   display: flex; /* Enables flexbox for layout */
