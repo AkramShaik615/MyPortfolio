@@ -44,7 +44,22 @@ body {
 .navbar i.fa-instagram:hover {
   color: red; /* Instagram red */
 }
+ /* Hover effects for individual icons */
+    .navbar i.fa-envelope:hover {
+      color: blue; /* Email icon hover color */
+    }
 
+    .navbar i.fa-phone:hover {
+      color: green; /* Call icon hover color */
+    }
+
+    .navbar i.fa-whatsapp:hover {
+      color: #25D366; /* WhatsApp icon hover color */
+    }
+
+    .navbar i.fa-telegram:hover {
+      color: #0088cc; /* Telegram icon hover color */
+    }
 /* Content spacing adjustment */
 body {
   padding-right: 70px; /* Ensure content isn't hidden behind fixed navbar */
@@ -701,4 +716,60 @@ header svg {
   .background-svg {
     height: 100vh; /* Slightly larger for larger screens */
   }
+}
+
+/* Navbar Styles */
+.bottombar {
+  position: fixed; /* Fixes the navbar to the bottom */
+  bottom: 0; /* Aligns the navbar to the bottom of the page */
+  left: 0; /* Starts from the left edge */
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Aligns items vertically in the row */
+  gap: 16px; /* Space between icons */
+  font-size: 2rem;
+  background-color: #2c2c2c; /* Dark background */
+  padding: 10px;
+  z-index: 1000; /* Ensures the navbar is on top */
+  width: 100%; /* Full width to stretch across the bottom */
+}
+
+/* Navbar Links */
+.bottombar a {
+  text-decoration: none;
+  color: inherit; /* Default color */
+  transition: color 0.3s ease;
+}
+
+/* Icon hover effect */
+.bottombar i {
+  font-size: 2rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+}
+
+.bottombar a:hover i {
+  color: #0073b1; /* LinkedIn Blue on hover */
+}
+
+/* Instagram icon hover color change */
+.bottombar i.fa-instagram:hover {
+  color: red; /* Instagram red */
+}
+
+/* Hover effects for individual icons */
+.bottombar i.fa-envelope:hover {
+  color: blue; /* Email icon hover color */
+}
+
+.bottombar i.fa-phone:hover {
+  color: green; /* Call icon hover color */
+}
+
+.bottombar i.fa-whatsapp:hover {
+  color: #25D366; /* WhatsApp icon hover color */
+}
+
+.bottombar i.fa-telegram:hover {
+  color: #0088cc; /* Telegram icon hover color */
 }
