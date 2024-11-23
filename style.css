@@ -8,7 +8,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  position: fixed; /* Fixes the navbar to the right side */
+  position: relative; /* Fixes the navbar to the right side */
   top: 0; /* Aligns the navbar to the top of the page */
   right: 0; /* Keeps it on the right side */
   display: flex;
@@ -49,17 +49,10 @@ body {
       color: blue; /* Email icon hover color */
     }
 
-    .navbar i.fa-phone:hover {
-      color: green; /* Call icon hover color */
-    }
-
     .navbar i.fa-whatsapp:hover {
       color: #25D366; /* WhatsApp icon hover color */
     }
 
-    .navbar i.fa-telegram:hover {
-      color: #0088cc; /* Telegram icon hover color */
-    }
 /* Content spacing adjustment */
 body {
   padding-right: 70px; /* Ensure content isn't hidden behind fixed navbar */
@@ -718,11 +711,12 @@ header svg {
   }
 }
 
-/* Navbar Styles */
+/* bottombar Styles */
 .bottombar {
-  position: fixed; /* Fixes the navbar to the bottom */
-  bottom: 0; /* Aligns the navbar to the bottom of the page */
-  left: 0; /* Starts from the left edge */
+  position: fixed; /* Fixes the bottombar to the bottom */
+  bottom: 0; /* Aligns the bottombar to the bottom of the page */
+  left: 50%; /* Start positioning from the horizontal center */
+  transform: translateX(-50%); /* Adjust position to truly center the bottombar */
   display: flex;
   flex-direction: row; /* Align items horizontally */
   justify-content: center; /* Centers items horizontally */
@@ -730,12 +724,12 @@ header svg {
   gap: 16px; /* Space between icons */
   font-size: 2rem;
   background-color: #2c2c2c; /* Dark background */
-  padding: 10px;
+  padding: 10px 20px; /* Added horizontal padding for better aesthetics */
   z-index: 1000; /* Ensures the navbar is on top */
-  width: 100%; /* Full width to stretch across the bottom */
+  border-radius: 10px 10px 0 0; /* Rounded top edges for visual appeal */
 }
 
-/* Navbar Links */
+/* bottombar Links */
 .bottombar a {
   text-decoration: none;
   color: inherit; /* Default color */
@@ -772,4 +766,37 @@ header svg {
 
 .bottombar i.fa-telegram:hover {
   color: #0088cc; /* Telegram icon hover color */
+}
+
+/* Content spacing adjustment */
+body {
+  padding-bottom: 70px; /* Ensure content isn't hidden behind fixed navbar */
+  margin: 0; /* Ensure no default margin is interfering */
+}
+
+/* Centered Content Styles */
+.center-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text */
+  margin-top: 50px; /* Space content from navbar */
+  height: calc(100vh - 50px); /* Full height minus navbar height */
+}
+
+/* Additional improvements for responsiveness */
+@media (max-width: 768px) {
+  .bottombar {
+    font-size: 1.5rem; /* Adjust font size on smaller screens */
+    gap: 12px; /* Reduced gap between navbar items */
+  }
+
+  .bottombar i {
+    font-size: 1.5rem; /* Adjust icon size for smaller screens */
+  }
+
+  .center-content {
+    margin-top: 30px; /* Adjust top margin on smaller screens */
+  }
 }
