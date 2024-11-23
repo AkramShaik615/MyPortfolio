@@ -24,7 +24,7 @@ body {
 body {
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
-  padding-right: 0px; /* Adds space for the fixed navbar on the right */
+  padding-right: 80px; /* Adds space for the fixed navbar on the right */
   padding-bottom: 0px; /* Adds space for the fixed bottom bar */
   background-color: #000; /* Ensures background matches the portfolio */
 }
