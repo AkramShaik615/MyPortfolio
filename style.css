@@ -6,39 +6,44 @@ body {
   font-family: Arial, sans-serif; /* Ensure a consistent font */
 }
 
-/* Navbar Styles - Fixed at the top-right */
+/* Navbar */
 .navbar {
-  position: fixed; /* Keeps it fixed in place */
-  top: 0; /* Aligns to the top of the viewport */
-  right: 0; /* Aligns to the right of the viewport */
-  display: flex; /* Enables Flexbox for content alignment */
-  flex-direction: column; /* Stacks items vertically */
-  justify-content: flex-start; /* Aligns items from the top */
-  align-items: center; /* Centers items horizontally */
-  gap: 16px; /* Adds space between items */
-  font-size: 2rem; /* Adjusts the font size for content */
-  background-color: #000; /* Black background color for consistency */
-  padding: 10px; /* Adds inner padding */
-  z-index: 1000; /* Ensures it is above other elements */
-  height: 100%; /* Makes the navbar span the entire viewport height */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  position: fixed; /* Fixes the navbar at the top-right corner */
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column; /* Aligns items in a vertical column */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center items horizontally */
+  gap: 16px; /* Space between navbar items */
+  font-size: 2rem; /* Font size for icons and links */
+  padding: 10px;
+  z-index: 1000; /* Ensures the navbar appears on top of other content */
+  height: 100%; /* Navbar spans the full height of the viewport */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for visual separation */
 }
 
-/* Navbar Link Styles */
+/* Navbar Links */
 .navbar a {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Ensures link color matches parent */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Icon Hover Effect */
 .navbar i {
-  font-size: 2rem; /* Icon size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover i {
-  color: #0073b1; /* Changes icon color on hover */
+  color: #0073b1; /* LinkedIn Blue */
+}
+
+/* Change Instagram icon color to red */
+.navbar i.fa-instagram:hover {
+  color: red; /* Set the Instagram icon color to red */
+}
+
+.navbar i.fa-comment-alt {
+  color: #333; /* Color for the chat icon */
 }
 
 /* Content Adjustment for Body */
