@@ -31,7 +31,7 @@ a:hover {
 /* Bottom Bar */
 .bottom-bar {
   position: fixed;
-  bottom: 0;
+  bottom: 10px; /* Adjust for spacing above the bottom edge */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -45,7 +45,8 @@ a:hover {
   font-size: 16px;
   z-index: 1000; /* Ensure it's on top of other content */
   width: fit-content; /* Automatically adjusts based on content size */
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
 }
 
 /* Bottom Bar Link Styles */
@@ -84,6 +85,25 @@ a:hover {
 .bottom-bar i.fa-telegram:hover {
   color: #0088cc;
 }
+
+/* Ensure no overlap with buttons or other content */
+.download-button {
+  margin-bottom: 70px; /* Add space between the button and the bottom bar */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bottom-bar {
+    font-size: 1.5rem;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+
+  .bottom-bar i {
+    font-size: 1.5rem;
+  }
+}
+
 
 /* Footer Text Styles (Centered) */
 .footer-text {
