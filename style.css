@@ -856,7 +856,8 @@ header svg {
 .navbar {
   display: flex;
   justify-content: center; /* Centers navbar items horizontally */
-  position: fixed; /* Sticks the navbar at the bottom */
+  align-items: center; /* Centers navbar items vertically */
+  position: fixed; /* Fixes the navbar at the bottom */
   bottom: 0; /* Positions navbar at the bottom of the page */
   left: 50%; /* Moves the navbar to the horizontal center */
   transform: translateX(-50%); /* Offsets the navbar by half its width for perfect centering */
@@ -879,6 +880,7 @@ header svg {
   transition: color 0.3s ease;
 }
 
+/* Hover Effects */
 .navbar a:hover i {
   color: #0073b1; /* LinkedIn Blue */
 }
