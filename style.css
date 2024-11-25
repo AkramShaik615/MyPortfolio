@@ -338,7 +338,7 @@ a:hover {
     }
 .contact-form {
  justify-content: center;
- align-items: center;
+      align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -409,29 +409,6 @@ a:hover {
   background: #005999;
   transform: scale(1.05);
 }
-/* Styling for the contact container */
-.contact-container {
-  width: 400px;
-  display: flex;
-  flex-direction: column; /* Ensures vertical stacking of child elements */
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
-  background-color: white; /* Optional background color */
-}
-
-/* Center-align the form elements */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-
 
 .text-center p, .text-center a {
   display: inline-block;
