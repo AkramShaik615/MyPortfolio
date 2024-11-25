@@ -112,34 +112,6 @@
     </div>
 </div>
 <a href="--https://drive.google.com/file/d/1PpRESBTGP_cZ6lQX3ofn7XH90_jmw3E6/view?usp=sharing" class="download-resume">Download Resume</a>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const resumeButton = document.querySelector('.download-resume');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          resumeButton.classList.add('visible');
-        } else {
-          resumeButton.classList.remove('visible');
-        }
-      });
-    });
-    observer.observe(resumeButton);
-
-    const techItems = document.querySelectorAll('.tech-item');
-    const techObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    });
-    techItems.forEach(item => techObserver.observe(item));
-  });
-</script>
-
 <!-- Projects Section -->
 <div class="projects-container">
   <h2>Projects</h2>
@@ -371,31 +343,7 @@
     </svg>
   </button>
 </body>
-  <!-- Bottom Bar Section (appears after the "Go to Top" button) -->
-  <div class="bottombar">
-    <a href="https://www.linkedin.com/in/shaik-akram-3a6429228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="mailto:akramroy813@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="tel:7093742514" target="_blank" rel="noopener noreferrer" aria-label="Call">
-      <i class="fas fa-phone"></i>
-    </a>
-    <a href="https://wa.me/7093742514" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://t.me/@AkramShaik813" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-      <i class="fab fa-telegram"></i>
-    </a>
-  </div>
-  
+   
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     
@@ -444,7 +392,75 @@
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
+  
+ <!-- Bottom Bar Section (appears after the "Go to Top" button) -->
+  <div class="bottombar">
+    <a href="https://www.linkedin.com/in/shaik-akram-3a6429228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:akramroy813@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="tel:7093742514" target="_blank" rel="noopener noreferrer" aria-label="Call">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/7093742514" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Observer for the "Download Resume" button
+    const resumeButton = document.querySelector('.download-resume');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resumeButton.classList.add('visible');
+        } else {
+          resumeButton.classList.remove('visible');
+        }
+      });
+    });
+    observer.observe(resumeButton);
 
+    // Observer for the technologies section
+    const techItems = document.querySelectorAll('.tech-item');
+    const techObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+    techItems.forEach(item => techObserver.observe(item));
 
+    // Observer for the contact section
+    const contactHeading = document.querySelector('.contact-container h2');
+    const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
+
+    const contactObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+
+    // Observe the contact heading and contact details
+    contactObserver.observe(contactHeading);
+    contactDetails.forEach(detail => contactObserver.observe(detail));
+  });
+</script>
+ 
 </body>
 </html>
