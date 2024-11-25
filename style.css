@@ -678,32 +678,36 @@ a:hover {
   height: 100px; /* Adjust height as needed */
 }
 
-/* Slide-in Animation for button visibility */
+/* Center Download Resume Button */
 .download-resume {
-  display: inline-block;
+  display: inline-block; /* Makes the link behave like a button */
+  margin: 20px auto; /* Centers the button horizontally */
   padding: 10px 20px;
-  border: 2px solid #1c1c1c;
-  border-radius: 30px;
-  background-color: white;
-  color: #333;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #0073b1; /* Button background color */
+  text-align: center;
   text-decoration: none;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
 }
 
-.download-resume.visible {
-  opacity: 1;
-  transform: translateX(0);
+/* Center alignment container */
+.center-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically align if needed */
+  flex-direction: column; /* Stack content vertically */
+  width: 100%;
+  text-align: center; /* Ensure text elements are centered */
+  padding: 20px 0;
 }
 
-/* Hover effect */
+/* Hover Effect for the Button */
 .download-resume:hover {
-  background-color: #f1f1f1;
+  background-color: #005582;
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
 }
 
 /* scroll up code */
