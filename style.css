@@ -852,6 +852,7 @@ header svg {
     font-size: 1.5rem;
   }
 }
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -874,8 +875,10 @@ header svg {
 .navbar a {
   text-decoration: none;
   color: inherit;
+  display: block; /* Ensures the icons don't overlap */
 }
 
+/* Navbar Icons */
 .navbar i {
   transition: color 0.3s ease;
 }
