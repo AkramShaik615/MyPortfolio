@@ -326,30 +326,61 @@ a:hover {
 }
 
 
- .contact-container {
-      width: 400px;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
-      margin-left: 20px; /* Shift the container slightly to the right */
-    }
+/* Center the entire contact container */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2); /* Optional background */
+}
+
+/* Styling for the contact container */
+.contact-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking of child elements */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+  background-color: white; /* Optional background color */
+}
+
+/* Center-align the form elements */
 .contact-form {
- justify-content: center;
-      align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Heading visibility styles */
+.contact-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .contact-container h2.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Input group styles */
 .input-group {
   position: relative;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .input-group span {
@@ -394,6 +425,7 @@ a:hover {
   height: 100px;
 }
 
+/* Button styles */
 .send-message-btn {
   background: #0073b1;
   color: #fff;
@@ -672,24 +704,6 @@ a:hover {
   position: relative; /* To contain the animation effect */
 }
 
-/* Center Download Resume Button */
-.download-resume {
-  display: inline-block; /* Makes the link behave like a button */
-  margin: 20px auto; /* Centers the button horizontally */
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #f9f9f9;
-  background-color: #0073b1; /* Button background color */
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  position: relative;
-  opacity: 0; /* Start invisible */
-  transform: translateX(-100%); /* Start off-screen to the left */
-  animation: slide-in 1s ease-out forwards; /* Slide-in animation */
-}
-
 /* Animation Keyframes */
 @keyframes slide-in {
   to {
@@ -708,13 +722,6 @@ a:hover {
   text-align: center; /* Ensure text elements are centered */
   padding: 20px 0;
 }
-
-/* Hover Effect for the Button */
-.download-resume:hover {
-  background-color: #2c2c2c;
-  transform: scale(1.05);
-}
-
 
 /* scroll up code */
 .go-to-top {
