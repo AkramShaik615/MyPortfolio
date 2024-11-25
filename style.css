@@ -41,18 +41,11 @@ a:hover {
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
   text-align: center;
   font-size: 16px;
   z-index: 1000; /* Ensure it's on top of other content */
-  width: auto; /* Dynamic width based on content */
-}
-
-/* Content Adjustment for Body */
-body {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  background-color: #000; /* Ensures background matches the portfolio */
+  width: fit-content; /* Automatically adjusts based on content size */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
 
 /* Bottom Bar Link Styles */
