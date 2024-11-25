@@ -34,57 +34,61 @@ a:hover {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;  /* Adjust this width if necessary */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between icons/links */
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
   text-align: center;
   font-size: 16px;
   z-index: 1000; /* Ensure it's on top of other content */
+  width: auto; /* Dynamic width based on content */
 }
 
 /* Content Adjustment for Body */
 body {
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
-  padding-right: 80px; /* Adds space for the fixed navbar on the right */
-  padding-bottom: 60px; /* Adds space for the fixed bottom bar */
   background-color: #000; /* Ensures background matches the portfolio */
 }
+
 /* Bottom Bar Link Styles */
-.bottombar a {
+.bottom-bar a {
   text-decoration: none;
   color: inherit;
   transition: color 0.3s ease;
 }
 
 /* Bottom Bar Icon Hover Effects */
-.bottombar i {
+.bottom-bar i {
   font-size: 2rem;
   transition: color 0.3s ease;
 }
 
-.bottombar a:hover i {
+.bottom-bar a:hover i {
   color: #0073b1;
 }
 
-.bottombar i.fa-instagram:hover {
+.bottom-bar i.fa-instagram:hover {
   color: red;
 }
 
-.bottombar i.fa-envelope:hover {
+.bottom-bar i.fa-envelope:hover {
   color: blue;
 }
 
-.bottombar i.fa-phone:hover {
+.bottom-bar i.fa-phone:hover {
   color: green;
 }
 
-.bottombar i.fa-whatsapp:hover {
+.bottom-bar i.fa-whatsapp:hover {
   color: #25D366;
 }
 
-.bottombar i.fa-telegram:hover {
+.bottom-bar i.fa-telegram:hover {
   color: #0088cc;
 }
 
