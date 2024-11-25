@@ -28,83 +28,6 @@ a:hover {
   color: #fff;
 }
 
-/* Bottom Bar */
-.bottom-bar {
-  position: fixed;
-  bottom: 10px; /* Adjust for spacing above the bottom edge */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; /* Space between icons/links */
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  z-index: 1000; /* Ensure it's on top of other content */
-  width: fit-content; /* Automatically adjusts based on content size */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
-}
-
-/* Bottom Bar Link Styles */
-.bottom-bar a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-/* Bottom Bar Icon Hover Effects */
-.bottom-bar i {
-  font-size: 2rem;
-  transition: color 0.3s ease;
-}
-
-.bottom-bar a:hover i {
-  color: #0073b1;
-}
-
-.bottom-bar i.fa-instagram:hover {
-  color: red;
-}
-
-.bottom-bar i.fa-envelope:hover {
-  color: blue;
-}
-
-.bottom-bar i.fa-phone:hover {
-  color: green;
-}
-
-.bottom-bar i.fa-whatsapp:hover {
-  color: #25D366;
-}
-
-.bottom-bar i.fa-telegram:hover {
-  color: #0088cc;
-}
-
-/* Ensure no overlap with buttons or other content */
-.download-button {
-  margin-bottom: 70px; /* Add space between the button and the bottom bar */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .bottom-bar {
-    font-size: 1.5rem;
-    gap: 12px;
-    padding: 8px 16px;
-  }
-
-  .bottom-bar i {
-    font-size: 1.5rem;
-  }
-}
-
-
 /* Footer Text Styles (Centered) */
 .footer-text {
   position: fixed;
@@ -804,4 +727,70 @@ header svg {
   font-size: 1rem; /* Font size */
   padding: 10px; /* Adds padding around the text */
   width: auto; /* Ensures it takes only as much width as it needs */
+}
+/* Bottom Bar */
+.bottom-bar {
+  position: fixed;
+  bottom: 0; /* Stick to the very bottom of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between icons/links */
+  padding: 10px 20px;
+  background-color: #333; /* Background color for better visibility */
+  color: #fff; /* Text color */
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000; /* Ensure it's on top of other content */
+  width: fit-content; /* Adjusts to content size automatically */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+}
+
+/* Bottom Bar Link Styles */
+.bottom-bar a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Bottom Bar Icon Hover Effects */
+.bottom-bar i {
+  font-size: 2rem; /* Icon size */
+  transition: color 0.3s ease;
+}
+
+.bottom-bar a:hover i {
+  color: #0073b1;
+}
+
+.bottom-bar i.fa-instagram:hover {
+  color: red;
+}
+
+.bottom-bar i.fa-envelope:hover {
+  color: blue;
+}
+
+.bottom-bar i.fa-phone:hover {
+  color: green;
+}
+
+.bottom-bar i.fa-whatsapp:hover {
+  color: #25D366;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bottom-bar {
+    font-size: 1.5rem;
+    gap: 12px;
+    padding: 8px 16px;
+  }
+
+  .bottom-bar i {
+    font-size: 1.5rem;
+  }
 }
