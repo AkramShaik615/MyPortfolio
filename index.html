@@ -128,7 +128,6 @@
       <i class="fas fa-dumbbell" style="font-size: 20px; margin-right: 8px;"></i>
       Gym Reservation System
       <a href="" target="_blank" style="margin-left: auto;">
-        <i class="fas fa-play play-icon"></i>
       </a>
     </h3>
     <p>Streamline gym reservations with this automated system! Built to make booking timeslots effortless, this project combines advanced back-end logic with a sleek user-friendly front-end.</p>
@@ -188,7 +187,6 @@
       <i class="fas fa-gamepad" style="font-size: 20px; margin-right: 8px;"></i>
       Tic-Tac-Toe
       <a href="" target="_blank" style="margin-left: auto;">
-        <i class="fas fa-play play-icon"></i>
       </a>
     </h3>
     <p>Dive into the classic Tic-Tac-Toe game, where strategy and skill meet! This implementation allows players to challenge themselves or go head-to-head with a friend.</p>
@@ -224,7 +222,6 @@
     <h3 style="position: relative; display: flex; align-items: center;">
       𓆘 Snake Game
       <a href="" target="_blank" style="margin-left: auto;">
-        <i class="fas fa-play play-icon"></i>
       </a>
     </h3>
     <p>Experience a unique twist on the classic Snake Game! Navigate your snake through a vibrant grid, collecting food items to grow in size and progress through levels.</p>
@@ -361,19 +358,7 @@
     </svg>
   </button>
 </body>
-   <!-- Navbar Section -->
-<div class="navbar">
-  <a href="https://www.linkedin.com/in/shaik-akram-3a6429228/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-</div>
-   <!-- Navbar Section -->
+ 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     
@@ -401,11 +386,9 @@
       });
     });
     techItems.forEach(item => techObserver.observe(item));
-
    
     const contactHeading = document.querySelector('.contact-container h2');
     const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
-
     const contactObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -415,10 +398,8 @@
         }
       });
     });
-
-   
+  
     contactObserver.observe(contactHeading);
-    
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
@@ -480,7 +461,7 @@
       justify-content: center; /* Centers icons horizontally */
       align-items: center; /* Aligns icons vertically */
       position: fixed; /* Fixes the navbar at the bottom of the viewport */
-      bottom: 20px; /* Positions the navbar slightly above the bottom */
+      bottom: 0px; /* Positions the navbar slightly above the bottom */
       left: 50%; /* Centers the navbar horizontally */
       transform: translateX(-50%); /* Ensures perfect centering */
       gap: 30px; /* Adds sufficient spacing between the icons */
@@ -494,7 +475,6 @@
     /* Navbar Links */
     .navbar a {
       text-decoration: none; /* Removes underline from links */
-      color: white; /* Default icon color */
       display: flex; /* Keeps icons aligned in the row layout */
       align-items: center; /* Vertically centers icons */
     }
@@ -540,16 +520,6 @@
     </a>
     <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="instagram">
       <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.github.com" target="_blank" aria-label="GitHub" class="github">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" class="twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="mailto:example@email.com" target="_blank" aria-label="Email" class="email">
-      <i class="fas fa-envelope"></i>
-    </a>
   </div>
 </body>
 </body>
