@@ -824,7 +824,7 @@ header svg {
   justify-content: flex-end; /* Aligns icons to the right within the container */
   align-items: center;   /* Centers icons vertically */
   position: fixed;       /* Ensures icons remain at the top-right corner on scroll */
-  top:  100px;             /* Adjusts the distance from the top */
+  top:  50px;             /* Adjusts the distance from the top */
   right: 5px;           /* Adjusts the distance from the right */
   gap: 0;             /* Adds spacing between icons */
   padding: 0px;     /* Adds padding around the icons */
