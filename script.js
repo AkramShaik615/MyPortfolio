@@ -224,3 +224,22 @@ function onMouseLeave() {
   pointerY = null;
 
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const techItems = document.querySelectorAll(".tech-item");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.1 } // Trigger when 10% of the item is visible
+  );
+
+  techItems.forEach((item) => observer.observe(item));
+});
+
