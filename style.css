@@ -436,7 +436,6 @@ a:hover {
   display: block;
 }
 
-
 /* Technologies Section Styling */
 .technologies-container {
   text-align: center;
@@ -459,7 +458,13 @@ a:hover {
 .tech-item {
   padding: 16px;
   opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Start below */
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tech-item.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
 }
 
 /* Floating Animation */
@@ -475,16 +480,11 @@ a:hover {
   }
 }
 
-.tech-item.visible {
-  opacity: 1;
-}
-
 .tech-item i {
   font-size: 7rem;
   transition: transform 0.3s ease;
 }
 
-/* Scale effect on hover */
 .tech-item:hover i {
   transform: scale(1.2);
 }
@@ -492,154 +492,76 @@ a:hover {
 /* Responsive Styling */
 @media (max-width: 768px) {
   .tech-items {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 }
 
-/* Animation delays for each item */
+/* Animation Delays for Each Item */
 .tech-item-1 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 0s;
-  transform: translateX(-100px); /* Move to left initially */
 }
 
 .tech-item-2 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 0.5s;
-  transform: translateY(-100px); /* Move up initially */
 }
 
 .tech-item-3 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 1s;
-  transform: translateX(100px); /* Move to right initially */
 }
 
 .tech-item-4 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 1.5s;
-  transform: translateX(-100px); /* Move to left initially */
 }
 
 .tech-item-5 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 2s;
-  transform: translateY(100px); /* Move down initially */
 }
 
 .tech-item-6 {
   animation: float 3s ease-in-out infinite;
   animation-delay: 2.5s;
-  transform: translateX(100px); /* Move to right initially */
-}
-
-.tech-item-7 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 3s;
-  transform: translateX(-100px); /* Move to left initially */
-}
-
-.tech-item-8 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 3.5s;
-  transform: translateY(-100px); /* Move up initially */
 }
 
 .tech-item-9 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 4s;
-  transform: translateX(100px); /* Move to right initially */
+  animation-delay: 3s;
 }
 
 .tech-item-10 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 4.5s;
-  transform: translateY(100px); /* Move down initially */
-}
-
-.tech-item-11 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 5s;
-  transform: translateX(-100px); /* Move to left initially */
-}
-
-.tech-item-12 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 5.5s;
-  transform: translateY(-100px); /* Move up initially */
-}
-
-.tech-item-13 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 6s;
-  transform: translateX(100px); /* Move to right initially */
-}
-
-.tech-item-14 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 6.5s;
-  transform: translateY(100px); /* Move down initially */
-}
-
-.tech-item-15 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 7s;
-  transform: translateX(-100px); /* Move to left initially */
-}
-
-.tech-item-16 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 7.5s;
-  transform: translateY(-100px); /* Move up initially */
+  animation-delay: 3.5s;
 }
 
 .tech-item-17 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 8s;
-  transform: translateX(100px); /* Move to right initially */
-}
-
-.tech-item-18 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 8.5s;
-  transform: translateY(100px); /* Move down initially */
-}
-
-.tech-item-19 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 9s;
-  transform: translateX(-100px); /* Move to left initially */
+  animation-delay: 4s;
 }
 
 .tech-item-20 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 9.5s;
-  transform: translateY(-100px); /* Move up initially */
+  animation-delay: 4.5s;
 }
 
 .tech-item-21 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 10s;
-  transform: translateX(100px); /* Move to right initially */
-}
-
-.tech-item-22 {
-  animation: float 3s ease-in-out infinite;
-  animation-delay: 10.5s;
-  transform: translateY(100px); /* Move down initially */
+  animation-delay: 5s;
 }
 
 .tech-item-23 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 11s;
-  transform: translateX(-100px); /* Move to left initially */
+  animation-delay: 5.5s;
 }
 
 .tech-item-24 {
   animation: float 3s ease-in-out infinite;
-  animation-delay: 11.5s;
-  transform: translateY(-100px); /* Move up initially */
+  animation-delay: 6s;
 }
 
 /* Button Container for Centering */
