@@ -471,32 +471,33 @@
 </script>
  <!-- Navbar style-->
   <style>
-    
-    /* Navbar */
-    .navbar {
-      display: flex; /* Aligns icons in a row */
-      justify-content: center; /* Centers navbar items horizontally */
-      align-items: center; /* Centers navbar items vertically */
-      position: relative; /* Fixes the navbar at the bottom of the page */
-      bottom: 0; /* Positions navbar at the bottom */
-      left: 50%; /* Centers the navbar horizontally */
-      transform: translateX(-50%); /* Perfect centering by adjusting for half width */
-      gap: 15px; /* Space between icons */
-      font-size: 2rem; /* Icon size */
-      padding: 10px 20px; /* Adds padding around the navbar */
-      border-radius: 8px;    /* Optional: Adds rounded corners */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for aesthetics */
-      z-index: 1000; /* Ensures the navbar appears above other content */
-      width: auto; /* Automatically adjusts the width to fit the content */
-    }
 
-    /* Navbar Links */
-    .navbar a {
-      text-decoration: none; /* Removes underline */
-      color: inherit; /* Sets the default color of the icons */
-      display: flex; /* Ensures icons stay in the row layout */
-      align-items: center; /* Centers the icons vertically */
-    }
+
+/* Navbar */
+.navbar {
+  display: flex; /* Ensures icons are aligned in a row */
+  justify-content: center; /* Centers icons horizontally */
+  align-items: center; /* Aligns icons vertically */
+  position: relative; /* Fixes the navbar at the bottom of the viewport */
+  bottom: 20px; /* Positions the navbar slightly above the bottom */
+  left: 50%; /* Centers the navbar horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  gap: 20px; /* Adds spacing between the icons */
+  font-size: 2rem; /* Sets the icon size */
+  padding: 10px 20px; /* Adds padding around the navbar */
+  background-color: white; /* Background color for the navbar */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+/* Navbar Links */
+.navbar a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Sets the icon color */
+  display: flex; /* Keeps icons aligned in the row layout */
+  align-items: center; /* Vertically centers icons */
+}
 
     /* Navbar Icons */
     .navbar i {
