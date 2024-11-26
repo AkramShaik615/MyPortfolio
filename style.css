@@ -820,24 +820,25 @@ header svg {
 
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  right: 10px;
-  z-index: 1000;
+  display: flex;         /* Enables horizontal alignment for icons */
+  justify-content: flex-end; /* Aligns icons to the right within the container */
+  align-items: center;   /* Centers icons vertically */
+  position: fixed;       /* Ensures icons remain at the top-right corner on scroll */
+  top: 20px;             /* Adjusts the distance from the top (increased for more spacing) */
+  right: 10px;           /* Adjusts the distance from the right */
+  gap: 15px;             /* Adds spacing between icons */
+  z-index: 1000;         /* Ensures container stays above other content */
 }
 
 /* Icon Styling */
 .icon-container a {
-  font-size: 2rem;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 2rem;       /* Adjusts the size of the icons */
+  color: black;          /* Default color for icons */
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
 }
 
-/* Hover Effect */
+/* Hover Effect for Icons */
 .icon-container a:hover {
-  color: #0073b1;
+  color: #0073b1;        /* Changes icon color to blue on hover */
 }
