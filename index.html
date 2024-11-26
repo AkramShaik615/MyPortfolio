@@ -469,18 +469,21 @@
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
-
- <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Navbar</title>
+  <style>
     /* Navbar */
     .navbar {
       display: flex; /* Ensures icons are aligned in a row */
-      justify-content: center; /* Centers icons horizontally */
+      justify-content: space-between; /* Spreads icons evenly across the row */
       align-items: center; /* Aligns icons vertically */
       position: relative; /* Fixes the navbar at the bottom of the viewport */
-      bottom: 0px; /* Positions the navbar slightly above the bottom */
+      bottom: 20px; /* Positions the navbar slightly above the bottom */
       left: 50%; /* Centers the navbar horizontally */
       transform: translateX(-50%); /* Ensures perfect centering */
-      gap: 15px; /* Adds spacing between the icons */
+      gap: 40px; /* Adds sufficient spacing between the icons */
       font-size: 2rem; /* Sets the icon size */
       padding: 10px 20px; /* Adds padding around the navbar */
       border-radius: 12px; /* Adds rounded corners */
@@ -492,21 +495,20 @@
     .navbar a {
       text-decoration: none; /* Removes underline from links */
       color: #0073b1; /* Default icon color (LinkedIn blue) */
-      display: flex; /* Keeps icons aligned in the row layout */
-      align-items: center; /* Vertically centers icons */
+      display: flex; /* Ensures proper alignment */
+      align-items: center; /* Aligns the icons properly */
     }
 
     /* Navbar Icons */
     .navbar i {
       font-size: 2rem; /* Adjusts the size of the icons */
-      color: #0073b1; /* Default color for LinkedIn blue */
       transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
     }
 
     /* Hover Effects */
     .navbar a:hover i {
       color: #005582; /* Darker blue on hover */
-      transform: scale(1.2); /* Increases icon size on hover */
+      transform: scale(1.2); /* Slightly increases icon size on hover */
     }
 
     /* Custom Icon Colors */
@@ -526,12 +528,28 @@
       color: #000; /* Black on hover */
     }
 
+    .navbar a.twitter i {
+      color: #1DA1F2; /* Twitter blue */
+    }
+
+    .navbar a.twitter:hover i {
+      color: #0d95e8; /* Darker Twitter blue on hover */
+    }
+
+    .navbar a.email i {
+      color: #FF4500; /* Email (reddish orange) */
+    }
+
+    .navbar a.email:hover i {
+      color: #CC3700; /* Darker reddish-orange on hover */
+    }
+
     /* Media Query for responsiveness */
     @media (max-width: 768px) {
       .navbar {
         font-size: 1.5rem; /* Smaller icon size for smaller screens */
+        gap: 25px; /* Adjust spacing for mobile view */
         padding: 8px; /* Adjust padding for mobile view */
-        gap: 15px; /* Reduce spacing on smaller screens */
       }
     }
   </style>
@@ -550,10 +568,10 @@
     <a href="https://www.github.com" target="_blank" aria-label="GitHub" class="github">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" class="twitter">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="mailto:example@email.com" target="_blank" aria-label="Email">
+    <a href="mailto:example@email.com" target="_blank" aria-label="Email" class="email">
       <i class="fas fa-envelope"></i>
     </a>
   </div>
