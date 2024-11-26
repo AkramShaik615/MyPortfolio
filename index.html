@@ -469,79 +469,95 @@
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
- <!-- Navbar style-->
+
   <style>
+    /* Navbar */
+    .navbar {
+      display: flex; /* Ensures icons are aligned in a row */
+      justify-content: center; /* Centers icons horizontally */
+      align-items: center; /* Aligns icons vertically */
+      position: fixed; /* Fixes the navbar at the bottom of the viewport */
+      bottom: 20px; /* Positions the navbar slightly above the bottom */
+      left: 50%; /* Centers the navbar horizontally */
+      transform: translateX(-50%); /* Ensures perfect centering */
+      gap: 25px; /* Adds spacing between the icons */
+      font-size: 2rem; /* Sets the icon size */
+      padding: 10px 20px; /* Adds padding around the navbar */
+      border-radius: 12px; /* Adds rounded corners */
+      background-color: #f4f4f4; /* Light background color */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for aesthetics */
+      z-index: 1000; /* Ensures the navbar stays above other content */
+    }
 
-
-/* Navbar */
-.navbar {
-  display: flex; /* Ensures icons are aligned in a row */
-  justify-content: center; /* Centers icons horizontally */
-  align-items: center; /* Aligns icons vertically */
-  position: relative; /* Fixes the navbar at the bottom of the viewport */
-  bottom: 20px; /* Positions the navbar slightly above the bottom */
-  left: 50%; /* Centers the navbar horizontally */
-  transform: translateX(-50%); /* Ensures perfect centering */
-  gap: 20px; /* Adds spacing between the icons */
-  font-size: 2rem; /* Sets the icon size */
-  padding: 10px 20px; /* Adds padding around the navbar */
-  border-radius: 8px; /* Adds rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
-  z-index: 1000; /* Ensures the navbar stays above other content */
-}
-
-/* Navbar Links */
-.navbar a {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Sets the icon color */
-  display: flex; /* Keeps icons aligned in the row layout */
-  align-items: center; /* Vertically centers icons */
-}
+    /* Navbar Links */
+    .navbar a {
+      text-decoration: none; /* Removes underline from links */
+      color: #0073b1; /* Default icon color (LinkedIn blue) */
+      display: flex; /* Keeps icons aligned in the row layout */
+      align-items: center; /* Vertically centers icons */
+    }
 
     /* Navbar Icons */
     .navbar i {
-      transition: color 0.3s ease; /* Smooth color transition */
+      font-size: 2rem; /* Adjusts the size of the icons */
+      color: #0073b1; /* Default color for LinkedIn blue */
+      transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
     }
 
     /* Hover Effects */
     .navbar a:hover i {
-      color: #0073b1; /* LinkedIn Blue for hover */
+      color: #005582; /* Darker blue on hover */
+      transform: scale(1.2); /* Increases icon size on hover */
     }
 
-    /* Change Instagram icon color to red */
-    .navbar i.fa-instagram:hover {
-      color: red; /* Set the Instagram icon color to red */
+    /* Custom Icon Colors */
+    .navbar a.instagram i {
+      color: #E1306C; /* Instagram pink */
     }
 
-    /* Optional: Additional hover effects */
-    .navbar i:hover {
-      transform: scale(1.1); /* Slightly increases icon size on hover */
+    .navbar a.instagram:hover i {
+      color: #C13584; /* Darker Instagram pink on hover */
+    }
+
+    .navbar a.github i {
+      color: #333; /* GitHub gray */
+    }
+
+    .navbar a.github:hover i {
+      color: #000; /* Black on hover */
     }
 
     /* Media Query for responsiveness */
     @media (max-width: 768px) {
       .navbar {
         font-size: 1.5rem; /* Smaller icon size for smaller screens */
-        padding: 10px; /* Adjust padding for mobile view */
+        padding: 8px; /* Adjust padding for mobile view */
+        gap: 15px; /* Reduce spacing on smaller screens */
       }
     }
   </style>
+  <!-- Font Awesome Script -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 <body>
   <!-- Navbar -->
   <div class="navbar">
     <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
     </a>
-    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="instagram">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://www.github.com" target="_blank" aria-label="GitHub">
+    <a href="https://www.github.com" target="_blank" aria-label="GitHub" class="github">
       <i class="fab fa-github"></i>
     </a>
+    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="mailto:example@email.com" target="_blank" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
   </div>
-</body>  
-  <!-- Navbar style-->
-  
+</body>
 </body>
 </html>
