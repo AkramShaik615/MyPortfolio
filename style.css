@@ -257,12 +257,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
   align-items: center;
 }
 
 .experience-item {
-  background-color: rgba(28, 28, 28, 0.7); /* Semi-transparent black */
+  background-color: #1c1c1c; /* Background color */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside */
   width: 100%; /* Full width */
@@ -273,9 +272,12 @@ a:hover {
 
 /* Hover effect for experience items */
 .experience-item:hover {
-  background-color: rgba(46, 46, 46, 0.7); /* Slightly darker transparent black */
+  background-color: #2e2e2e; /* Darker shade on hover */
   transform: scale(1.02); /* Slight scale up */
-  
+  border: 2px solid transparent; /* Transparent border initially */
+  border-image: linear-gradient(to right, #add8e6, #87cefa); /* Light blue gradient border */
+  border-image-slice: 1; /* Ensures full gradient is applied */
+  box-shadow: 0 0 8px rgba(173, 216, 230, 0.6), 0 0 8px rgba(135, 206, 250, 0.6); /* Subtle glowing effect in light blue shades */
 }
 
 /* Year Styling */
