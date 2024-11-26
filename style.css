@@ -774,50 +774,6 @@ header svg {
   width: auto; /* Ensures it takes only as much width as it needs */
 }
 
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center; /* Centers navbar items horizontally */
-  align-items: center; /* Centers navbar items vertically */
-  position: relative; /* Fixes the navbar at the bottom of the page */
-  bottom: 0; /* Positions navbar at the bottom */
-  left: 50%; /* Moves the navbar to the horizontal center */
-  transform: translateX(-50%); /* Offsets the navbar by half its width for perfect centering */
-  gap: 15px; /* Space between icons */
-  font-size: 2rem;
-  padding: 10px 20px; /* Adds padding for better aesthetics */
-  border-radius: 10px 10px 0 0; /* Optional rounded corners at the top */
-  z-index: 1000; /* Ensures the navbar is above other elements */
-  width: auto; /* Adjust width if needed */
-}
-
-/* Navbar Links */
-.navbar a {
-  text-decoration: none;
-  color: inherit;
-  display: block; /* Ensures the icons don't overlap */
-}
-
-/* Navbar Icons */
-.navbar i {
-  transition: color 0.3s ease;
-}
-
-/* Hover Effects */
-.navbar a:hover i {
-  color: #0073b1; /* LinkedIn Blue */
-}
-
-/* Change Instagram icon color to red */
-.navbar i.fa-instagram:hover {
-  color: red; /* Set the Instagram icon color to red */
-}
-
-.navbar i.fa-comment-alt {
-  color: #333; /* Color for the chat icon */
-}
-
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
   display: flex;         /* Enables horizontal alignment for icons */
