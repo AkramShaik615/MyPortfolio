@@ -818,27 +818,31 @@ header svg {
   color: #333; /* Color for the chat icon */
 }
 
+/* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
-  display: flex;         /* Enables flexbox for horizontal alignment */
-  justify-content: flex-end; /* Aligns icons to the right */
-  align-items: center;   /* Centers icons vertically within the container */
-  position: relative;       /* Ensures the icons stay in the top-right corner even when scrolling */
+  display: flex;         /* Enables horizontal alignment for icons */
+  justify-content: flex-end; /* Aligns icons to the right within the container */
+  align-items: center;   /* Centers icons vertically */
+  position: fixed;       /* Ensures icons remain at the top-right corner on scroll */
   top: 10px;             /* Adjusts the distance from the top */
   right: 10px;           /* Adjusts the distance from the right */
   gap: 15px;             /* Adds spacing between icons */
-  z-index: 1000;         /* Ensures icons are above other elements */
-  padding: 5px 10px;     /* Adds padding for better aesthetics */
-  border-radius: 8px;    /* Optional: Adds rounded corners to the container */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  background-color: white; /* Background for better visibility */
+  padding: 5px 10px;     /* Adds padding around the icons */
+  border-radius: 8px;    /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for aesthetics */
+  z-index: 1000;         /* Ensures container stays above other content */
 }
 
+/* Icon Styling */
 .icon-container a {
-  font-size: 24px;       /* Adjusts the size of the icons */
-  color: #000;           /* Sets the icon color */
+  font-size: 2rem;       /* Adjusts the size of the icons */
+  color: inherit;          /* Default color for icons */
   text-decoration: none; /* Removes underline from links */
-  transition: color 0.3s ease; /* Adds a smooth transition effect */
+  transition: color 0.3s ease; /* Smooth color transition effect */
 }
 
+/* Hover Effect for Icons */
 .icon-container a:hover {
-  color: #555;           /* Changes color on hover */
+  color: #0073b1;          /* Changes color on hover */
 }
