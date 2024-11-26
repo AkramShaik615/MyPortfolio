@@ -469,6 +469,77 @@
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
- 
+ <!-- Navbar style-->
+  <style>
+    /* Navbar */
+    .navbar {
+      display: flex; /* Aligns icons in a row */
+      justify-content: center; /* Centers navbar items horizontally */
+      align-items: center; /* Centers navbar items vertically */
+      position: fixed; /* Fixes the navbar at the bottom of the page */
+      bottom: 0; /* Positions navbar at the bottom */
+      left: 50%; /* Centers the navbar horizontally */
+      transform: translateX(-50%); /* Perfect centering by adjusting for half width */
+      gap: 15px; /* Space between icons */
+      font-size: 2rem; /* Icon size */
+      padding: 10px 20px; /* Adds padding around the navbar */
+      background-color: black; /* Black background for the navbar */
+      z-index: 1000; /* Ensures the navbar appears above other content */
+      width: auto; /* Automatically adjusts the width to fit the content */
+    }
+
+    /* Navbar Links */
+    .navbar a {
+      text-decoration: none; /* Removes underline */
+      color: white; /* Sets the default color of the icons */
+      display: flex; /* Ensures icons stay in the row layout */
+      align-items: center; /* Centers the icons vertically */
+    }
+
+    /* Navbar Icons */
+    .navbar i {
+      transition: color 0.3s ease; /* Smooth color transition */
+    }
+
+    /* Hover Effects */
+    .navbar a:hover i {
+      color: #0073b1; /* LinkedIn Blue for hover */
+    }
+
+    /* Change Instagram icon color to red */
+    .navbar i.fa-instagram:hover {
+      color: red; /* Set the Instagram icon color to red */
+    }
+
+    /* Optional: Additional hover effects */
+    .navbar i:hover {
+      transform: scale(1.1); /* Slightly increases icon size on hover */
+    }
+
+    /* Media Query for responsiveness */
+    @media (max-width: 768px) {
+      .navbar {
+        font-size: 1.5rem; /* Smaller icon size for smaller screens */
+        padding: 10px; /* Adjust padding for mobile view */
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.github.com" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</body>  
+  <!-- Navbar style-->
+  
 </body>
 </html>
