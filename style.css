@@ -821,24 +821,27 @@ header svg {
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
   display: flex;         /* Enables horizontal alignment for icons */
-  justify-content: flex-end; /* Aligns icons to the right within the container */
-  align-items: center;   /* Centers icons vertically */
-  position: fixed;       /* Ensures icons remain at the top-right corner on scroll */
-  top: 20px;             /* Adjusts the distance from the top (increased for more spacing) */
+  justify-content: flex-end; /* Aligns the icon to the right within the container */
+  align-items: center;   /* Centers the icon vertically */
+  position: fixed;       /* Ensures the icon remains at the top-right corner on scroll */
+  top: 20px;             /* Adjusts the distance from the top */
   right: 10px;           /* Adjusts the distance from the right */
-  gap: 15px;             /* Adds spacing between icons */
   z-index: 1000;         /* Ensures container stays above other content */
+  background: none;      /* Removes background color if present */
+  padding: 0;            /* Removes any padding */
+  gap: 0;                /* Ensures no gap as there's only one icon */
 }
 
 /* Icon Styling */
 .icon-container a {
-  font-size: 2rem;       /* Adjusts the size of the icons */
-  color: black;          /* Default color for icons */
-  text-decoration: none; /* Removes underline from links */
+  font-size: 2rem;       /* Adjusts the size of the icon */
+  color: black;          /* Default color for the icon */
+  text-decoration: none; /* Removes underline from the link */
   transition: color 0.3s ease; /* Smooth color transition effect */
 }
 
-/* Hover Effect for Icons */
+/* Hover Effect for Icon */
 .icon-container a:hover {
   color: #0073b1;        /* Changes icon color to blue on hover */
 }
+
