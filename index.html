@@ -91,24 +91,7 @@
   <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
     <i class="fab fa-github"></i>
   </a>
-  <br>
-  <a href="https://www.linkedin.com" target="_blank"  rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-   <br>
- <a href="https://www.instagram.com" target="_blank"  rel="noopener noreferrer"  aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-  </a>
-   <br>
-  <a href="tel:+1234567890" aria-label="Call">
-      <i class="fas fa-phone"></i>
-  </a>
-   <br>
-  <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-  </a>
-  
-</div>
+ </div>
    <!-- center Section -->
 <div class="center-content">
   <div class="flex flex-col items-center mt-10">
@@ -468,67 +451,21 @@
     contactDetails.forEach(detail => contactObserver.observe(detail));
   });
 </script>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Styled Navbar</title>
-  <style>
-    /* Navbar */
-    .navbar {
-      display: flex; /* Ensures icons are aligned in a row */
-      justify-content: center; /* Centers icons horizontally */
-      align-items: center; /* Aligns icons vertically */
-      position: relative; /* Fixes the navbar at the bottom of the viewport */
-      bottom: 0px; /* Positions the navbar slightly above the bottom */
-      left: 50%; /* Centers the navbar horizontally */
-      transform: translateX(-50%); /* Ensures perfect centering */
-      gap: 30px; /* Adds sufficient spacing between the icons */
-      font-size: 2rem; /* Sets the icon size */
-      padding: 10px 20px; /* Adds padding around the navbar */
-      border-radius: 12px; /* Adds rounded corners */
-      background-color: transparent; /* Transparent background */
-      z-index: 1000; /* Ensures the navbar stays above other content */
-    }
+<!-- Last Container -->
+<div class="last-container">
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="tel:+1234567890" aria-label="Call">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
 
-    /* Navbar Links */
-    .navbar a {
-      text-decoration: none; /* Removes underline from links */
-      display: flex; /* Keeps icons aligned in the row layout */
-      align-items: center; /* Vertically centers icons */
-    }
-
-    /* Navbar Icons */
-    .navbar i {
-      font-size: 2rem; /* Adjusts the size of the icons */
-      transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-    }
-
-    /* Hover Effects */
-    .navbar a:hover i {
-      color: #005582; /* Darker blue on hover */
-      transform: scale(1.2); /* Slightly increases icon size on hover */
-    }
-
-    /* Custom Icon Colors (Initially White) */
-    .navbar a.instagram i,
-    .navbar a.github i,
-    .navbar a.twitter i,
-    .navbar a.email i,
-    .navbar a.linkedin i {
-      color: white; /* Default icon color for all */
-    }
-
-    /* Media Query for responsiveness */
-    @media (max-width: 768px) {
-      .navbar {
-        font-size: 1.5rem; /* Smaller icon size for smaller screens */
-        gap: 20px; /* Adjust spacing for mobile view */
-        padding: 8px; /* Adjust padding for mobile view */
-      }
-    }
-  </style>
-  <!-- Font Awesome Script -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
 </body>
 </html>
