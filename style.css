@@ -639,36 +639,38 @@ header svg {
 
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
-  position: fixed;             /* Keeps icons fixed at the top-right corner */
-  right: 0px;                  /* Aligns the icons to the right */
-  z-index: 1000;               /* Ensures icons stay above other content */
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Ensures icons remain at the top-right corner on scroll */
+  top: 100px;                  /* Adjusts the distance from the top (moved further down) */
+  right: 0px;                  /* Adjusts the distance from the right */
+  gap: 20px;                   /* Ensures proper spacing between icons */
+  padding: 10px;               /* Optional padding inside the container */
+  z-index: 1000;               /* Ensures container stays above other content */
 }
 
-/* GitHub Icon */
-.icon-container .github-icon {
-  font-size: 2rem;             /* Size of the GitHub icon */
-  color: #fff;                 /* Default white color */
-  text-decoration: none;       /* Removes underline */
-  position: absolute;          /* Allows independent positioning */
-  top: 100px;                  /* Vertical position for GitHub icon */
+/* Icon Styling */
+.icon-container a {
+  font-size: 2rem;             /* Sets the size of the icons */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
   transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
 }
 
-/* Instagram Icon */
-.icon-container .instagram-icon {
-  font-size: 2rem;             /* Size of the Instagram icon */
-  color: #fff;                 /* Default white color */
-  text-decoration: none;       /* Removes underline */
-  position: absolute;          /* Allows independent positioning */
-  top: 160px;                  /* Vertical position for Instagram icon */
-  transition: color 0.3s ease; /* Smooth color transition effect */
+/* Specific Styling for Instagram Icon */
+.icon-container a.instagram-icon {
+  color: #E1306C;              /* Instagram's brand color */
 }
 
-/* Hover Effects */
-.icon-container .github-icon:hover {
-  color: #4078c0;              /* GitHub hover color */
+/* Hover Effect for Icons */
+.icon-container a:hover {
+  color: #0073b1;              /* Changes color on hover */
 }
 
-.icon-container .instagram-icon:hover {
-  color: #E1306C;              /* Instagram hover color */
+/* Hover Effect for Instagram Icon */
+.icon-container a.instagram-icon:hover {
+  color: #C13584;              /* Different hover color for Instagram */
 }
