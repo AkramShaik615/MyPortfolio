@@ -639,28 +639,41 @@ header svg {
 
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
-  display: flex;         /* Enables horizontal alignment for icons */
-  justify-content: flex-end; /* Aligns icons to the right within the container */
-  align-items: center;   /* Centers icons vertically */
-  position: fixed;       /* Ensures icons remain at the top-right corner on scroll */
-  top:  50px;             /* Adjusts the distance from the top */
-  right: 5px;           /* Adjusts the distance from the right */
-  gap: 0;             /* Adds spacing between icons */
-  padding: 0px;     /* Adds padding around the icons */
-  border-radius: 8px;    /* Optional: Adds rounded corners */
+  display: flex;               /* Enables horizontal alignment for icons */
+  flex-direction: column;       /* Aligns icons vertically */
+  justify-content: flex-start;  /* Aligns icons to the top of the container */
+  align-items: flex-end;        /* Aligns icons to the right within the container */
+  position: fixed;              /* Ensures icons remain at the top-right corner on scroll */
+  top: 50px;                    /* Adjusts the distance from the top */
+  right: 5px;                   /* Adjusts the distance from the right */
+  gap: 10px;                    /* Adds spacing between rows */
+  padding: 0;                   /* Adds padding around the icons */
+  border-radius: 8px;           /* Optional: Adds rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for aesthetics */
-  z-index: 1000;         /* Ensures container stays above other content */
+  z-index: 1000;                /* Ensures container stays above other content */
+}
+
+/* Top Row Styling (GitHub, LinkedIn, Instagram) */
+.top-icons {
+  display: flex;                 /* Horizontal alignment for top row icons */
+  gap: 10px;                     /* Adds spacing between icons */
+}
+
+/* Bottom Row Styling (Call and WhatsApp) */
+.bottom-icons {
+  display: flex;                 /* Horizontal alignment for bottom row icons */
+  gap: 10px;                     /* Adds spacing between icons */
 }
 
 /* Icon Styling */
 .icon-container a {
-  font-size: 2rem;       /* Adjusts the size of the icons */
-  color: inherit;          /* Default color for icons */
-  text-decoration: none; /* Removes underline from links */
-  transition: color 0.3s ease; /* Smooth color transition effect */
+  font-size: 2rem;               /* Adjusts the size of the icons */
+  color: inherit;                /* Default color for icons */
+  text-decoration: none;         /* Removes underline from links */
+  transition: color 0.3s ease;   /* Smooth color transition effect */
 }
 
 /* Hover Effect for Icons */
 .icon-container a:hover {
-  color: #0073b1;          /* Changes color on hover */
+  color: #0073b1;                /* Changes color on hover */
 }
