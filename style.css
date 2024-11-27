@@ -644,8 +644,8 @@ header svg {
   justify-content: flex-start; /* Aligns icons to the top of the container */
   align-items: flex-end;       /* Aligns icons to the right within the container */
   position: fixed;             /* Ensures icons remain at the top-right corner on scroll */
-  top: 20px;                   /* Adjusts the distance from the top */
-  right: 20px;                 /* Adjusts the distance from the right */
+  top: 50px;                   /* Adjusts the distance from the top */
+  right: 0px;                 /* Adjusts the distance from the right */
   gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
   z-index: 1000;               /* Ensures container stays above other content */
@@ -654,7 +654,7 @@ header svg {
 /* Icon Styling */
 .icon-container a {
   font-size: 2rem;             /* Sets the size of the icons */
-  color: #000;                 /* Default color for icons */
+  color: #fff;                 /* Default color for icons */
   text-decoration: none;       /* Removes underline from links */
   transition: color 0.3s ease; /* Smooth color transition effect */
   display: block;              /* Ensures each icon occupies its own line */
@@ -663,26 +663,4 @@ header svg {
 /* Hover Effect for Icons */
 .icon-container a:hover {
   color: #0073b1;              /* Changes color on hover */
-}
-/* Last Container */
-.last-container {
-  display: flex;              /* Enables horizontal alignment for icons */
-  justify-content: center;    /* Centers icons horizontally within the container */
-  align-items: center;        /* Aligns icons vertically within the container */
-  gap: 20px;                  /* Adds spacing between the icons */
-  padding: 10px;              /* Optional: Padding around the container */
-}
-
-/* Icon Styling */
-.last-container a {
-  font-size: 2rem;            /* Adjusts the size of the icons */
-  color: #333;                /* Default color for icons */
-  text-decoration: none;      /* Removes underline from links */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-}
-
-/* Hover Effect for Icons */
-.last-container a:hover {
-  color: #0073b1;             /* Changes color on hover */
-  transform: scale(1.2);      /* Enlarges the icon slightly on hover */
 }
