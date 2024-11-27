@@ -644,7 +644,7 @@ header svg {
   justify-content: flex-start; /* Aligns icons to the top of the container */
   align-items: flex-end;       /* Aligns icons to the right within the container */
   position: fixed;             /* Ensures icons remain at the top-right corner on scroll */
-  top: 100px;                  /* Adjusts the distance from the top (moved further down) */
+  top: 80px;                  /* Adjusts the distance from the top (moved further down) */
   right: 0px;                  /* Adjusts the distance from the right */
   gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
@@ -668,9 +668,4 @@ header svg {
 /* Hover Effect for Icons */
 .icon-container a:hover {
   color: #0073b1;              /* Changes color on hover */
-}
-
-/* Hover Effect for Instagram Icon */
-.icon-container a.instagram-icon:hover {
-  color: #C13584;              /* Different hover color for Instagram */
 }
