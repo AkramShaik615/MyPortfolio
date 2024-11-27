@@ -666,23 +666,26 @@ header svg {
 }
 
 /* Main Container of lets connect right side icons or image */
+/* Main Container */
 .container {
-  display: flex;
-  justify-content: flex-end; /* Align all content to the right */
-  align-items: center;
+  position: relative;
   width: 400px;
   height: 400px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center;
+  height: 100vh;
   font-family: Arial, sans-serif;
   background: transparent; /* Transparent background */
   overflow: hidden;
-  position: relative;
 }
 
 /* Hand with Phone */
 .hand {
   position: absolute;
-  bottom: 10px; /* Slight gap from bottom */
-  right: 0px; /* Fully aligned to the right */
+  bottom: 0;
+  right: 0; /* Aligned to the right */
   width: 200px;
   height: 200px;
   background: #ffb6b6;
@@ -693,7 +696,7 @@ header svg {
 .phone {
   position: absolute;
   top: 50px;
-  right: 0px; /* Positioned fully to the right */
+  right: 50px; /* Positioned fully to the right */
   width: 100px;
   height: 160px;
   background: #ffffff;
@@ -726,49 +729,83 @@ header svg {
   background-color: #1595b6;
   border-radius: 50%;
   opacity: 0.5;
+  animation: moveCircle 4s ease-in-out infinite alternate; /* Added animation */
 }
 
 .user-icon {
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 20%;
-  right: 0%; /* Fully aligned to the right */
+  top: 50%;
+  right: 5%; /* Fully aligned to the right */
+  animation: moveRight 4s ease-in-out infinite alternate; /* Animation added */
 }
 
 .small-circle {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 10%;
-  right: 0%; /* Fully aligned to the right */
+  top: 30%;
+  right: 5%; /* Fully aligned to the right */
+  animation: moveRight 4s ease-in-out infinite alternate; /* Animation added */
 }
 
 .medium-circle {
   position: absolute;
   width: 30px;
   height: 30px;
-  bottom: 15%;
-  right: 0%; /* Fully aligned to the right */
+  top: 70%;
+  right: 5%; /* Fully aligned to the right */
+  animation: moveRight 4s ease-in-out infinite alternate; /* Animation added */
 }
 
 .message-icon {
   position: absolute;
   top: 25%;
-  right: 0%; /* Fully aligned to the right */
+  right: 10%; /* Fully aligned to the right */
   width: 80px;
   height: 40px;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  animation: moveLeftRight 4s ease-in-out infinite alternate; /* Added animation */
 }
 
 .paper-plane {
   position: absolute;
   top: 10%;
-  right: 0%; /* Fully aligned to the right */
+  right: 5%; /* Fully aligned to the right */
   width: 60px;
   height: 60px;
   background: #1595b6;
   clip-path: polygon(50% 0%, 100% 40%, 80% 50%, 50% 100%, 20% 50%, 0% 40%);
+  animation: moveLeftRight 4s ease-in-out infinite alternate; /* Added animation */
+}
+
+/* Animation Keyframes */
+@keyframes moveCircle {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px); /* Moves the circle */
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0); /* Starting position */
+  }
+  100% {
+    transform: translateX(100px); /* Moves to the right */
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0); /* Starting position */
+  }
+  100% {
+    transform: translateX(200px); /* Moves to the right */
+  }
 }
