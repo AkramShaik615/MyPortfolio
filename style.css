@@ -698,6 +698,35 @@ header svg {
   color: #0073b1;              /* Changes color to LinkedIn's brand color on hover */
 }
 
+/* Email Icon Container (Navbar at Top Right Corner) */
+.email-container {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
+  top: 140px;                  /* Adjusts the distance from the top */
+  right: 0px;                  /* Adjusts the distance from the right */
+  gap: 20px;                   /* Ensures proper spacing between icons */
+  padding: 10px;               /* Optional padding inside the container */
+  z-index: 1000;               /* Ensures container stays above other content */
+}
+
+/* Icon Styling */
+.email-container a {
+  font-size: 2rem;             /* Sets the size of the icon */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
+}
+
+/* Hover Effect for Email Icon */
+.email-container a:hover {
+  color: #007bff;              /* Changes color to blue on hover (Bootstrap blue) */
+}
+
+
 /* Instagram Icon Container (Navbar at Top Right Corner) */
 .instagram-container {
   display: flex;               /* Enables flexbox layout */
@@ -705,7 +734,7 @@ header svg {
   justify-content: flex-start; /* Aligns icons to the top of the container */
   align-items: flex-end;       /* Aligns icons to the right within the container */
   position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
-  top: 150px;                  /* Adjusts the distance from the top */
+  top: 190px;                  /* Adjusts the distance from the top */
   right: 0px;                  /* Adjusts the distance from the right */
   gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
@@ -733,7 +762,7 @@ header svg {
   justify-content: flex-start; /* Aligns icons to the top of the container */
   align-items: flex-end;       /* Aligns icons to the right within the container */
   position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
-  top: 200px;                  /* Adjusts the distance from the top */
+  top: 240px;                  /* Adjusts the distance from the top */
   right: 0px;                  /* Adjusts the distance from the right */
   gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
@@ -762,7 +791,7 @@ header svg {
   justify-content: flex-start; /* Aligns icons to the top of the container */
   align-items: flex-end;       /* Aligns icons to the right within the container */
   position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
-  top: 250px;                  /* Adjusts the distance from the top */
+  top: 280px;                  /* Adjusts the distance from the top */
   right: 0px;                  /* Adjusts the distance from the right */
   gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
