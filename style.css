@@ -646,26 +646,21 @@ header svg {
   position: fixed;             /* Ensures icons remain at the top-right corner on scroll */
   top: 20px;                   /* Adjusts the distance from the top */
   right: 20px;                 /* Adjusts the distance from the right */
-  gap: 15px;                   /* Adds spacing between icons */
+  gap: 20px;                   /* Ensures proper spacing between icons */
   padding: 10px;               /* Optional padding inside the container */
   z-index: 1000;               /* Ensures container stays above other content */
 }
 
 /* Icon Styling */
 .icon-container a {
-  font-size: 2rem;             /* Adjusts the size of the icons */
+  font-size: 2rem;             /* Sets the size of the icons */
   color: #000;                 /* Default color for icons */
   text-decoration: none;       /* Removes underline from links */
   transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
 }
 
 /* Hover Effect for Icons */
 .icon-container a:hover {
   color: #0073b1;              /* Changes color on hover */
-}
-
-/* Reset Box Shadow for Transparent Effect (Optional) */
-.icon-container {
-  background-color: transparent; /* Ensures no background color */
-  box-shadow: none;             /* Removes shadow if not required */
 }
