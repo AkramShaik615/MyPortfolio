@@ -639,9 +639,9 @@ header svg {
 
 /* Icon Container (Navbar at Top Right Corner) */
 .icon-container {
-  position: fixed;             /* Keeps icons at the top-right corner */
-  top: 100px;                  /* Adjust distance from the top */
-  right: 0px;                  /* Adjust distance from the right */
+  position: fixed;             /* Keeps icons fixed at the top-right corner */
+  top: 100px;                  /* Base position from the top */
+  right: 0px;                  /* Aligns container to the right */
   z-index: 1000;               /* Ensures container stays above other content */
 }
 
@@ -649,19 +649,22 @@ header svg {
 .icon-container .github-icon {
   font-size: 2rem;             /* Size of the GitHub icon */
   color: #fff;                 /* Default white color */
-  text-decoration: none;       /* No underline */
-  display: block;              /* Separate block for spacing */
-  margin-bottom: 20px;         /* Adds space below GitHub icon */
+  text-decoration: none;       /* Removes underline from links */
+  position: relative;          /* Enables individual top spacing */
+  top: 0px;                    /* Specific top spacing for GitHub icon */
   transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon is on its own line */
 }
 
 /* Instagram Icon */
 .icon-container .instagram-icon {
   font-size: 2rem;             /* Size of the Instagram icon */
   color: #fff;                 /* Default white color */
-  text-decoration: none;       /* No underline */
-  display: block;              /* Separate block for spacing */
+  text-decoration: none;       /* Removes underline from links */
+  position: relative;          /* Enables individual top spacing */
+  top: 40px;                   /* Specific top spacing for Instagram icon */
   transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon is on its own line */
 }
 
 /* Hover Effects */
