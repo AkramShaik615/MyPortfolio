@@ -660,7 +660,17 @@ header svg {
   display: block;              /* Ensures each icon occupies its own line */
 }
 
+/* Specific Styling for Instagram Icon */
+.icon-container a.instagram-icon {
+  color: #E1306C;              /* Instagram's brand color */
+}
+
 /* Hover Effect for Icons */
 .icon-container a:hover {
   color: #0073b1;              /* Changes color on hover */
+}
+
+/* Hover Effect for Instagram Icon */
+.icon-container a.instagram-icon:hover {
+  color: #C13584;              /* Different hover color for Instagram */
 }
