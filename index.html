@@ -94,7 +94,7 @@
 </div>
   <!-- linkedin Container -->
 <div class="linkedin-container">
-  <a href="https://linkedin.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+  <a href="https://www.linkedin.com/in/shaik-akram-3a6429228/" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
     <i class="fab fa-linkedin"></i>
   </a>
 </div> 
@@ -104,6 +104,14 @@
     <i class="fas fa-envelope"></i>
   </a>
 </div>
+
+  <!-- Instagram Container -->
+<div class="Instagram-Container">
+  <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+  
       <!-- whatsapp Container -->
 <div class="whatsapp-container">
   <a href="https://wa.me/7093741514" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
@@ -409,30 +417,49 @@
         font-size: 16px;
     }
 </style>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 <script>
-    function sendEmail() {
+    // Initialize EmailJS with your user ID
+    emailjs.init('YOUR_USER_ID');  // Replace 'YOUR_USER_ID' with your actual EmailJS User ID
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
 
-        // Construct the mailto URL
-        const mailtoLink = `mailto:akramroy813@gmail.com?subject=New Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        // Prepare the email data
+        const emailData = {
+            from_name: name,
+            from_email: email,
+            message: message
+        };
 
-        // Open the mail client
-        window.location.href = mailtoLink;
+        // Send the email using EmailJS
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailData)
+            .then(function(response) {
+                console.log('Success!', response);
+                // Show the success message frame
+                const frame = document.getElementById('frame');
+                frame.style.display = 'block';
 
-        // Show success frame
-        const frame = document.getElementById('frame');
-        frame.style.display = 'block';
+                // Hide the frame after 5 seconds
+                setTimeout(() => {
+                    frame.style.display = 'none';
+                }, 5000);
 
-        // Hide the frame after 5 seconds
-        setTimeout(() => {
-            frame.style.display = 'none';
-        }, 5000);
+                // Clear the form
+                document.getElementById('contactForm').reset();
+            }, function(error) {
+                console.log('Failed...', error);
+                alert("Error sending message. Please try again.");
+            });
     }
 </script>
 
-  
   
 <!-- Copyright Text -->
   <p class="footer-text">Akram Shaik © 2024</p>
