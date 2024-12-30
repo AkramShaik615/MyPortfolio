@@ -86,7 +86,7 @@
   </header>
 </body>
 <body>
-  <!-- Icon Container -->
+   <!-- Icon Container -->
 <div class="icon-container">
   <a href="https://www.github.com/AkramShaik615" target="_blank" rel="noopener noreferrer" aria-label="Github">
     <i class="fab fa-github"></i>
@@ -105,23 +105,10 @@
   </a>
 </div>
 
-  <!-- Instagram Container -->
-<div class="Instagram-Container">
+<!-- Instagram Container -->
+<div class="instagram-container">
   <a href="https://www.instagram.com/shaikakram98/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
-  </a>
-</div>
-  
-      <!-- whatsapp Container -->
-<div class="whatsapp-container">
-  <a href="https://wa.me/7093741514" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-</div>
-      <!-- call Container -->
-<div class="call-container">
- <a href="tel:+91 7093742514" target="_blank" rel="noopener noreferrer" aria-label="Call">
-    <i class="fas fa-phone-alt"></i>
   </a>
 </div>
    <!-- center Section -->
@@ -152,119 +139,295 @@
   
 <!-- Projects Section -->
 <div class="projects-container">
-  <h2>Projects</h2>
+  <h2>Latest Work's</h2>
      <div class="project-separator"></div> <!-- Separator line -->
-  <!-- Gym Reservation System -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      <i class="fas fa-dumbbell" style="font-size: 20px; margin-right: 8px;"></i>
-      Gym Reservation System
-      <a href="" target="_blank" style="margin-left: auto;">
-      </a>
-    </h3>
-    <p>Streamline gym reservations with this automated system! Built to make booking timeslots effortless, this project combines advanced back-end logic with a sleek user-friendly front-end.</p>
-    <div class="technologies">
-      <span class="tech-tag">Java</span>
-      <span class="tech-tag">AWS</span>
-      <span class="tech-tag">MongoDB</span>
-      <span class="tech-tag">React</span>
-    </div>
-  </div>
-  <div class="project-separator"></div>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-  <!-- Airline Reservation System -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      ✈️ Airline Reservation System
-      <a href="" target="_blank" style="margin-left: auto;"></a>
-    </h3>
-    <p>Developed to efficiently manage flight bookings, passenger information, and scheduling. This system offers a user-friendly interface for customers to search for flights, book tickets, and manage reservations.</p>
-    <div class="technologies">
-      <span class="tech-tag">React</span>
-      <span class="tech-tag">Redux</span>
-      <span class="tech-tag">HTML</span>
-      <span class="tech-tag">CSS</span>
-      <span class="tech-tag">Bootstrap</span>
-      <span class="tech-tag">JavaScript</span>
-      <span class="tech-tag">Java</span>
-      <span class="tech-tag">Spring Boot</span>
-      <span class="tech-tag">REST APIs</span>
-      <span class="tech-tag">SQL</span>
-      <span class="tech-tag">Postman</span>
-    </div>
-  </div>
-  <div class="project-separator"></div>
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px 0;
+            position: relative; /* Ensures line is positioned relative to this container */
+        }
 
-  <!-- Robust Payment Retry System -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      💳 Robust Payment Retry System
-      <a href="" target="_blank" style="margin-left: auto;"></a>
-    </h3>
-    <p>This fault-tolerant system ensures reliable transaction processing during temporary failures, such as network disruptions. By employing intelligent retry mechanisms, it prevents duplicate transactions and maintains stability without user intervention.</p>
-    <div class="technologies">
-      <span class="tech-tag">Java 8</span>
-      <span class="tech-tag">Spring Boot</span>
-      <span class="tech-tag">REST APIs</span>
-      <span class="tech-tag">Hibernate</span>
-      <span class="tech-tag">MongoDB</span>
-      <span class="tech-tag">Postman</span>
-    </div>
-  </div>
-  <div class="project-separator"></div>
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 0;
+            position: relative;
+        }
 
-  <!-- Tic-Tac-Toe -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      <i class="fas fa-gamepad" style="font-size: 20px; margin-right: 8px;"></i>
-      Tic-Tac-Toe
-      <a href="" target="_blank" style="margin-left: auto;">
-      </a>
-    </h3>
-    <p>Dive into the classic Tic-Tac-Toe game, where strategy and skill meet! This implementation allows players to challenge themselves or go head-to-head with a friend.</p>
-    <div class="technologies">
-      <span class="tech-tag">Java</span>
-      <span class="tech-tag">JavaSwing</span>
-      <span class="tech-tag">JFrame</span>
-      <span class="tech-tag">JUnit</span>
-    </div>
-  </div>
-  <div class="project-separator"></div>
+        .project:nth-child(even) {
+            flex-direction: row-reverse;
+        }
 
-  <!-- Calculator -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      <i class="fas fa-calculator" style="font-size: 20px; margin-right: 8px;"></i>
-      Calculator
-      <a href="https://akramshaik615.github.io/Calculator/" target="_blank" style="margin-left: auto;">
-        <i class="fas fa-play play-icon"></i>
-      </a>
-    </h3>
-    <p>This project is a simple yet functional web-based calculator designed using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations and features a clean, responsive design.</p>
-    <div class="technologies">
-      <span class="tech-tag">HTML</span>
-      <span class="tech-tag">CSS</span>
-      <span class="tech-tag">JavaScript</span>
-    </div>
-  </div>
-  <div class="project-separator"></div>
+        .project-details {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px;
+        }
 
-  <!-- Snake Game -->
-  <div class="project-item">
-    <h3 style="position: relative; display: flex; align-items: center;">
-      𓆘 Snake Game
-      <a href="" target="_blank" style="margin-left: auto;">
-      </a>
-    </h3>
-    <p>Experience a unique twist on the classic Snake Game! Navigate your snake through a vibrant grid, collecting food items to grow in size and progress through levels.</p>
-    <div class="technologies">
-      <span class="tech-tag">Java</span>
-      <span class="tech-tag">JavaSwing</span>
-      <span class="tech-tag">JFrame</span>
-      <span class="tech-tag">JUnit</span>
+        .project-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin: 0 0 10px;
+        }
+
+        .project-type {
+            font-size: 18px;
+            color: #888;
+            margin: 0 0 15px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            color:white;
+            margin: 0 0 20px;
+            line-height: 1.6;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-tags span {
+            background-color: #efefef;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+
+.project-image {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #333; /* Optional background for the icon */
+}
+
+
+        .project-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sky blue line */
+        .line {
+            position: absolute;
+            width: 2px;
+            background-color: skyblue; /* Sky blue line */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            top: 20px; /* Top gap from the container */
+            bottom: 20px; /* Bottom gap to avoid touching the bottom */
+            height: calc(100% - 40px); /* Full container height minus the top and bottom gaps */
+        }
+
+        /* Circle styles */
+        .circle {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            border: 2px solid #888;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 20px; /* Gap between the circle and the top */
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .project:nth-child(even) .circle {
+            border-color: #f68b1f;
+        }
+
+        .project:nth-child(odd) .circle {
+            border-color: #6a4cff;
+        }
+
+        /* Adjust circle position */
+        .project:nth-child(1) .circle {
+            top: 20px; /* Circle positioned with gap for the first project */
+        }
+
+        .project:nth-child(2) .circle {
+            top: 50%; /* Circle positioned at the center with gap */
+        }
+
+        /* Adjust the line between the projects */
+        .project:nth-child(odd) {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Connecting Line -->
+        <div class="line"></div>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="circle"></div>
+            <div class="project-details">
+                <h2 class="project-title">Gym Reservation System</h2>
+                <p class="project-description">
+                  Streamline gym reservations with this automated system! Built to make booking timeslots effortless, this project combines advanced back-end logic with a sleek user-friendly front-end.
+                </p>
+                <div class="tech-tags">
+                    <span>#Java</span>
+                    <span>#AWS</span>
+                    <span>#MongoDB</span>
+                    <span>#React</span>
+                </div>
+            </div>
+            <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+        🏋️
     </div>
-  </div>
-  <div class="project-separator"></div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="circle"></div>
+            <div class="project-details">
+                <h2 class="project-title"> Airline Reservation System</h2>
+                <p class="project-description">
+                   Developed to efficiently manage flight bookings, passenger information, and scheduling. This system offers a user-friendly interface for customers to search for flights, book tickets, and manage reservations.
+                </p>
+                <div class="tech-tags">
+                    <span>#Java</span>
+                    <span>#JavaScript</span>
+                    <span>#Spring Boot</span>
+                    <span>#SQL</span>
+                    <span>#HTML</span>
+                    <span>#CSS</span>
+                    <span>#REST APIs</span>
+                </div>
+            </div>
+             <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+        ✈️
+    </div>
+        </div>
+       
+       <!-- Project 3 -->
+<div class="project">
+    <div class="circle"></div>
+    <div class="project-details">
+        <h2 class="project-title">Robust Payment Retry System</h2>
+        <p class="project-description">
+            This fault-tolerant system ensures reliable transaction processing during temporary failures, such as network disruptions. By employing intelligent retry mechanisms, it prevents duplicate transactions and maintains stability without user intervention.
+        </p>
+        <div class="tech-tags">
+            <span>#Java 8</span>
+            <span>#Spring Boot</span>
+            <span>#REST APIs</span>
+            <span>#Hibernate</span>
+            <span>#MongoDB</span>
+            <span>#Postman</span>
+        </div>
+    </div>
+    <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+        💳
+    </div>
+</div>
+
+<!-- Project 4 -->
+<div class="project">
+    <div class="circle"></div>
+    <div class="project-details">
+        <h2 class="project-title">
+            <i class="fas fa-gamepad" style="font-size: 24px; margin-right: 8px;"></i>
+            Tic-Tac-Toe
+        </h2>
+        <p class="project-description">
+            Dive into the classic Tic-Tac-Toe game, where strategy and skill meet! This implementation allows players to challenge themselves or go head-to-head with a friend.
+        </p>
+        <div class="tech-tags">
+            <span>#Java</span>
+            <span>#JavaSwing</span>
+            <span>#JFrame</span>
+            <span>#JUnit</span>
+        </div>
+    </div>
+    <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+        🎮
+    </div>
+</div>
+
+<!-- Project 5 -->
+<div class="project">
+    <div class="circle"></div>
+    <div class="project-details">
+        <h2 class="project-title">
+            <i class="fas fa-calculator" style="font-size: 24px; margin-right: 8px;"></i>
+            Calculator
+        </h2>
+        <p class="project-description">
+            This project is a simple yet functional web-based calculator designed using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations and features a clean, responsive design.
+        </p>
+        <div class="tech-tags">
+            <span>#HTML</span>
+            <span>#CSS</span>
+            <span>#JavaScript</span>
+        </div>
+    </div>
+    <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+         🖩
+    </div>
+</div>
+
+<!-- Project 6 -->
+<div class="project">
+    <div class="circle"></div>
+    <div class="project-details">
+        <h2 class="project-title">𓆘 Snake Game</h2>
+        <p class="project-description">
+            Experience a unique twist on the classic Snake Game! Navigate your snake through a vibrant grid, collecting food items to grow in size and progress through levels.
+        </p>
+        <div class="tech-tags">
+            <span>#Java</span>
+            <span>#JavaSwing</span>
+            <span>#JFrame</span>
+            <span>#JUnit</span>
+        </div>
+    </div>
+    <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
+        🐍
+    </div>
+</div>
+       
+    </div>
+</body>
+
 </div>
 
 <!-- Experience Section -->
