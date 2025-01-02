@@ -382,129 +382,6 @@ a:hover {
 }
 /* technologies */
 
-.contact-container {
-      width: 400px;
-      display: flex;
-      justify-content: left;
-      align-items: left;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
-      margin-left: 80px; /* Shift the container slightly to the right */
-    }
-.contact-form {
-   justify-content: left;
-   align-items: left;
-   display: flex;
-   flex-direction: column;
-}
-
-.contact-container h2.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.input-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-group span {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 16px;
-  color: #ffffff; /* Pure white color */
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.input-group input,
-.input-group textarea {
-  width: 100%;
-  padding: 15px 15px 15px 45px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background: none; /* Transparent background for the inputs */
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-  border-color: #0073b1;
-  box-shadow: 0px 0px 5px rgba(0, 115, 177, 0.5);
-}
-
-.input-group input:focus + span,
-.input-group input:not(:placeholder-shown) + span,
-.input-group textarea:focus + span,
-.input-group textarea:not(:placeholder-shown) + span {
-  top: -20px;
-  font-size: 15px;
-  color: #0073b1;
-}
-
-.input-group textarea {
-  resize: none;
-  height: 100px;
-}
-
-.send-message-btn {
-  background: #0073b1;
-  color: #fff;
-  border: none;
-  padding: 10px 70px;
-  font-size: 16px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.send-message-btn:hover {
-  background: #005999;
-  transform: scale(1.05);
-}
-
-.text-center p, .text-center a {
-  display: inline-block;
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.text-center p {
-  transform: translateX(100%);
-}
-
-.text-center a[href^="mailto"], .text-center a[href^="tel"] {
-  transform: translateX(-100%);
-}
-
-.text-center p.visible, .text-center a.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-/* For email link sliding in from right */
-.text-center a[href^="mailto"] {
-  transform: translateX(100%); /* Change from -100% to 100% to slide in from the right */
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.text-center a.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
-/* Add space between contact elements */
-.text-center a {
-  margin-top: 10px;
-  display: block;
-}
-
 /* Button Container for Centering */
 .button-container {
   display: flex;
@@ -767,4 +644,51 @@ header svg {
 .svg-container svg {
   width: 100px; /* Adjust the size as needed */
   height: 100px;
+}
+
+/* Centering styles */
+.resume-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if height is defined */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text within the flex container */
+  margin-top: 50px; /* Add some top margin to space it from the navbar */
+
+}
+
+/* Button Container for Centering */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 70px; /* Adjust height as needed */
+}
+
+/* Slide-in Animation for button visibility */
+.download-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #f9f9f9; /* Light text color for contrast */
+  border-radius: 30px;
+  background-color: white; /* Set background color to white */
+  color: #333; /* Dark text color for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.download-resume.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover effect */
+.download-resume:hover {
+  background-color: #f1f1f1; /* Light hover background */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
