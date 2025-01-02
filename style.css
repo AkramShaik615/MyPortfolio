@@ -333,7 +333,7 @@ a:hover {
 .tech-item {
   padding: 16px;
   opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Move down initially */
+  transform: translateY(-50px); /* Move up initially */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -347,21 +347,28 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
-.tech-item:hover i {
-  transform: scale(1.2);
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
-/* Animation */
+/* Hover effect for zooming the icon */
+.tech-item:hover .tech-icon {
+  transform: scale(1.3); /* Zoom in the icon */
+}
+
+/* Animation for floating up and down */
 @keyframes float {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(10px); /* Move down */
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0); /* Move back up */
   }
 }
 
