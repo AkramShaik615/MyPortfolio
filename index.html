@@ -136,6 +136,45 @@
     I am proficient in Git and GitHub for version control.</p>
     </div>
 </div>
+
+  <!-- Resume Section -->
+<body>
+<div class="resume-content">
+  <div class="button-container">
+    <a href="https://drive.google.com/file/d/1y9tO4Gxqdfm8w_0kSkxNhGdNNGFAScAJ/view?usp=sharing" class="download-resume">
+      Resume
+    </a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const resumeButton = document.querySelector('.download-resume');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resumeButton.classList.add('visible');
+        } else {
+          resumeButton.classList.remove('visible');
+        }
+      });
+    });
+    observer.observe(resumeButton);
+
+    const techItems = document.querySelectorAll('.tech-item');
+    const techObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
+    techItems.forEach(item => techObserver.observe(item));
+  });
+</script>
+</body> <!-- Resume Section End -->
   
 <!-- Projects Section -->
 <div class="projects-container">
@@ -476,61 +515,53 @@
 </div>
 
 
-  
-<!-- Technologies Section -->
+  <!-- Technologies Section -->  
 <div class="technologies-container">
   <h2>Technologies</h2>
   <div class="tech-items">
-    <div class="tech-item tech-item-1">
-      <i class="fab fa-java"></i>
-      <p>Java 8</p>
-    </div>
-    <div class="tech-item tech-item-2">
-      <i class="fab fa-js"></i>
-      <p>JavaScript</p>
-    </div>
-    <div class="tech-item tech-item-3">
-      <i class="fab fa-html5"></i>
+    
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="tech-icon">
       <p>HTML</p>
     </div>
-    <div class="tech-item tech-item-4">
-      <i class="fab fa-css3-alt"></i>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="tech-icon">
       <p>CSS</p>
     </div>
-    <div class="tech-item tech-item-5">
-      <i class="fab fa-aws"></i>
-      <p>AWS</p>
-    </div>
-    <div class="tech-item tech-item-6">
-      <i class="fas fa-database"></i>
-      <p>SQL</p>
-    </div>
-    <div class="tech-item tech-item-7">
-      <i class="fab fa-c"></i>
-      <p>C</p>
-    </div>
-    <div class="tech-item tech-item-8">
-      <i class="fab fa-database"></i>
-      <p>MongoDB</p>
-    </div>
-    <div class="tech-item tech-item-9">
-      <i class="fab fa-database"></i>
-      <p>Kubernetes</p>
-    </div>
-    <div class="tech-item tech-item-10">
-      <i class="fab fa-github"></i>
-      <p>GitHub</p>
-    </div>
-    <div class="tech-item tech-item-11">
-      <i class="fab fa-database"></i>
-      <p>SpringBoot</p>
-    </div>
-    <div class="tech-item tech-item-20">
-      <i class="fab fa-react"></i>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="tech-icon">
       <p>React</p>
     </div>
-    <div class="tech-item tech-item-21">
-      <i class="fab fa-docker"></i>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="tech-icon">
+      <p>JavaScript</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="tech-icon">
+      <p>Java</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring Boot" class="tech-icon">
+      <p>Spring Boot</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" class="tech-icon">
+      <p>SQL</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://www.mongodb.com/assets/images/global/favicon.ico" alt="MongoDB" class="tech-icon">
+      <p>MongoDB</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" class="tech-icon">
+      <p>AWS</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="tech-icon">
+      <p>Kubernetes</p>
+    </div>
+    <div class="tech-item">
+      <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" class="tech-icon">
       <p>Docker</p>
     </div>
   </div>
@@ -552,98 +583,6 @@
     </svg>
   </button>
 </body>
- 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    
-    const resumeButton = document.querySelector('.download-resume');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          resumeButton.classList.add('visible');
-        } else {
-          resumeButton.classList.remove('visible');
-        }
-      });
-    });
-    observer.observe(resumeButton);
-
-    // Observer for technologies section
-    const techItems = document.querySelectorAll('.tech-item');
-    const techObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    });
-    techItems.forEach(item => techObserver.observe(item));
-   
-    const contactHeading = document.querySelector('.contact-container h2');
-    const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
-    const contactObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    });
-  
-    contactObserver.observe(contactHeading);
-    contactDetails.forEach(detail => contactObserver.observe(detail));
-  });
-</script>
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Observer for the "Download Resume" button
-    const resumeButton = document.querySelector('.download-resume');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          resumeButton.classList.add('visible');
-        } else {
-          resumeButton.classList.remove('visible');
-        }
-      });
-    });
-    observer.observe(resumeButton);
-
-    // Observer for the technologies section
-    const techItems = document.querySelectorAll('.tech-item');
-    const techObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    });
-    techItems.forEach(item => techObserver.observe(item));
-
-    // Observer for the contact section
-    const contactHeading = document.querySelector('.contact-container h2');
-    const contactDetails = document.querySelectorAll('.text-center p, .text-center a');
-
-    const contactObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    });
-
-    // Observe the contact heading and contact details
-    contactObserver.observe(contactHeading);
-    contactDetails.forEach(detail => contactObserver.observe(detail));
-  });
-</script>
 
 </body>
 </html>
