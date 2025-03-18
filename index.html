@@ -33,6 +33,64 @@
       width: 70px;
       height: 70px;
     }
+
+  /* icons of project */
+   .icon-popup-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .project-icon {
+      font-size: 50px;
+      transition: transform 0.3s ease;
+  }
+  
+  .popup-link {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%) translateY(0);
+      background: #f57c51; /* soft orange */
+      color: #fff;
+      padding: 10px 20px; /* increased padding */
+      border-radius: 999px; /* auto-rounded */
+      font-size: 10px; /* slightly larger */
+      opacity: 0;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      text-decoration: none;
+      pointer-events: none;
+      display: flex;               /* flexbox */
+      align-items: center;         /* vertical center */
+      justify-content: center;     /* horizontal center */
+      gap: 5px;                    /* spacing between text and arrow */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      min-width: 120px; /* ensures a wider button */
+  }
+  
+    .popup-link::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 6px;
+        border-style: solid;
+        border-color: #f57c51 transparent transparent transparent;
+    }
+  
+    .icon-popup-container:hover .popup-link {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-10px);
+        pointer-events: auto;
+    }
+  
+    .icon-popup-container:hover .gym-icon {
+        transform: scale(1.1);
+    }
+     /* icons of the projects ends here */
+    
   </style>
 </head>
     <div class="background-svg">
@@ -263,16 +321,16 @@
         }
 
 
-.project-image {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #333; /* Optional background for the icon */
-}
+      .project-image {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px;
+          border-radius: 50%;
+          background-color: #333; /* Optional background for the icon */
+      }
 
 
         .project-image {
@@ -360,7 +418,18 @@
                 </div>
             </div>
             <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        🏋️
+       <div class="icon-popup-container">
+        <div class="project-icon">🏋️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Gym Reservation System <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
         </div>
 
@@ -378,7 +447,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        🎟️
+         ️<div class="icon-popup-container">
+        <div class="project-icon">🎟️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Ticket Price Calculator <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -397,7 +477,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        💰
+        ️<div class="icon-popup-container">
+        <div class="project-icon">💰️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Transaction Management <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -420,7 +511,18 @@
                 </div>
             </div>
              <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        ✈️
+        <div class="icon-popup-container">
+        <div class="project-icon">✈️️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Airline Reservation System <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
         </div>
        
@@ -442,7 +544,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        💳
+       ️<div class="icon-popup-container">
+        <div class="project-icon">💳️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Payment Retry System <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -465,7 +578,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        🎮
+        ️<div class="icon-popup-container">
+        <div class="project-icon">🎮️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Tic-Tac-Toe <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -487,7 +611,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-         🖩
+        ️<div class="icon-popup-container">
+        <div class="project-icon">🖩️</div>
+        <a href="https://akramshaik615.github.io/Calculator/" target="_blank" class="popup-link";>
+            Calculator <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -507,7 +642,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        🐍
+       ️<div class="icon-popup-container">
+        <div class="project-icon">🐍️</div>
+        <a href="https://your-demo-link.com" target="_blank" class="popup-link";>
+            Snake Game <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
 
@@ -529,7 +675,18 @@
         </div>
     </div>
     <div class="project-image" style="font-size: 50px; display: flex; align-items: center; justify-content: center;">
-        ⏳
+       ️<div class="icon-popup-container">
+        <div class="project-icon">⏳ ️</div>
+        <a href="https://akramshaik615.github.io/Promodoro-Timer/" target="_blank" class="popup-link";>
+            Pomodoro Timer <i style="font-size: 6px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-external-link">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg></i>
+        </a>
+    </div>
     </div>
 </div>
       
