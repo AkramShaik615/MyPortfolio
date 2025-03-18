@@ -36,6 +36,21 @@
   </style>
 </head>
     <div class="background-svg">
+      
+       <!-- stars Code starts (left side half only at the SVG Top A background-svg letter icon )-->
+      <div class="night"></div>
+
+    <script>
+       
+        const night = document.querySelector('.night');
+        for (let i = 0; i < 20; i++) {
+            const star = document.createElement('div');
+            star.classList.add('shooting_star');
+            night.appendChild(star);
+        }
+    </script>
+      <!-- stars Code ends -->
+      
   <svg
     viewBox="0 0 406 368"
     fill="none"
