@@ -7,11 +7,92 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-  <body>
+<!--  <body>
   <canvas></canvas>
   <script src="script.js"></script>
     
-</body>
+</body>  -->
+
+  <head>
+<style>
+    /* Reset ,,, home about me projects and experience*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #10002B;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbarheader {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #87CEEB; /* Sky blue */
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background-color: #87CEEB;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-links a.active {
+      color: #87CEEB;
+    }
+
+  </style>
+</head>
+<body id="top">
+  <header class="navbarheader">
+    <nav class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#aboutme">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+    </nav>
+  </header>
+</body>  <!-- /* Reset ,,, home about me projects and experience*/ -->
+   
   <head>
   <title>SVG at Top Left</title>
   <style>
