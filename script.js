@@ -262,20 +262,3 @@ window.addEventListener('touchmove', (e) => {
     moveRocket(touchX, touchY);
   }
 });
-
-// rocket code started
-function moveRocket(x, y) {
-  // Calculate angle based on center of rocket
-  const rocketCenterX = rocket.offsetLeft + rocket.offsetWidth / 2;
-  const rocketCenterY = rocket.offsetTop + rocket.offsetHeight / 2;
-
-  const dx = x - rocketCenterX;
-  const dy = y - rocketCenterY;
-  const angle = Math.atan2(dy, dx) * 180 / Math.PI + 90;
-
-  // Move and rotate the rocket
-  rocket.style.left = (x - 25) + 'px';  // Adjust for half width
-  rocket.style.top = (y - 25) + 'px';   // Adjust for half height
-  rocket.style.transform = `rotate(${angle}deg)`;
-}
-// rocket code ended
