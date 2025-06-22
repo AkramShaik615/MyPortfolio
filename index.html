@@ -9,8 +9,7 @@
 </head>
   <body>
   <canvas></canvas>
-  <script src="script.js"></script>
-    
+  <script src="script.js"></script>    
 </body> 
 
   <head>
@@ -925,50 +924,158 @@
 </div>
 
 <!-- Experience Section -->
-<div class="experience-container" id="experience">
-  <!-- Experience 1 -->
-  <div class="experience-item">
-    <h2>Experience</h2>
-    <p class="experience-year">April/2023 - August/2024</p>
-    <div class="experience-details">
-      <h3>Java Developer - <span class="company">MIMSYS Technologies</span></h3>
-      <p>Resolved high-priority bugs to achieve 99.9% application uptime, minimizing downtime and ensuring a seamless user experience.</p>
-      <p>Collaborated with product, design, and QA teams to enhance product quality, resulting in 95% customer satisfaction through effective communication and swift feedback loops.</p>
-      <p>Implemented security best practices, including encryption and vulnerability scanning, leading to a 50% improvement in system security and safeguarding critical data.</p>
-      <p>Upgraded outdated code and optimized database queries, improving execution times, responsiveness, and overall system reliability.</p>
-      <p>Conducted code migrations and modernized legacy codebases, reducing technical debt, enhancing scalability, and ensuring compatibility with modern frameworks.</p>
-      <div class="technologies">
-        <span class="tech-tag">Java</span>
-        <span class="tech-tag">HTML</span>
-        <span class="tech-tag">CSS</span>
-        <span class="tech-tag">SQL</span>
-        <span class="tech-tag">C</span>
-        <span class="tech-tag">C++</span>
-        <span class="tech-tag">VB</span>
+<head>
+<style>
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f9f9f9;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 40px 0 20px;
+      color: #ffffff;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px 40px;
+      gap: 30px;
+    }
+
+    .experience-item {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      color: #ffffff; /* All text inside is white */
+    }
+
+    .experience-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px rgba(135, 206, 250, 0.5), 0 0 20px rgba(135, 206, 250, 0.3);
+      border: 1px solid rgba(135, 206, 250, 0.4);
+    }
+
+    .experience-year {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .role {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .company {
+      color: #87cefa;
+      font-weight: 500;
+    }
+
+    .experience-details {
+      margin-top: 10px;
+      color: #ffffff;
+    }
+
+    .experience-list {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .experience-list li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tech-tag {
+      background-color: #2a2a2a;
+      color: #87cefa;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .tech-tag:hover {
+      background-color: #3a3a3a;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="experience-container" id="experience">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+
+    <!-- Experience 1 -->
+    <div class="experience-item">
+      <p class="experience-year">Apr 2023 - Aug 2024</p>
+      <div class="experience-details">
+        <h3 class="role">Java Developer <span class="company">@ MIMSYS Technologies</span></h3>
+        <ul class="experience-list">
+          <li>Resolved high-priority bugs, ensuring 99.9% uptime.</li>
+          <li>Collaborated cross-functionally to achieve 95% customer satisfaction.</li>
+          <li>Applied security best practices, improving protection by 50%.</li>
+          <li>Optimized queries and upgraded code for performance gains.</li>
+          <li>Modernized legacy systems for scalability and framework compatibility.</li>
+        </ul>
+        <div class="technologies">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">C</span>
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">VB</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Experience 2 -->
-  <div class="experience-item">
-    <p class="experience-year">September/2022 - March/2023</p>
-    <div class="experience-details">
-      <h3>Intern - <span class="company">Spiders</span></h3>
-      <p>Successfully completed an internship in Full Stack Java Development, gaining hands-on experience in building dynamic web applications.</p>
-      <p>Enhanced technical expertise in Java, Spring Boot, MySQL, and front-end technologies like HTML, CSS, and JavaScript, while actively participating in coding challenges.</p>
-      <p>Learned the importance of teamwork, collaboration, and efficient problem-solving in a professional environment.</p>
-      <div class="technologies">
-        <span class="tech-tag">Java</span>
-        <span class="tech-tag">Spring Boot</span>
-        <span class="tech-tag">MySQL</span>
-        <span class="tech-tag">HTML</span>
-        <span class="tech-tag">CSS</span>
-        <span class="tech-tag">JavaScript</span>
+    <!-- Experience 2 -->
+    <div class="experience-item">
+      <p class="experience-year">Sep 2022 - Mar 2023</p>
+      <div class="experience-details">
+        <h3 class="role">Intern <span class="company">@ Spiders</span></h3>
+        <ul class="experience-list">
+          <li>Completed a Full Stack Java Development internship.</li>
+          <li>Built dynamic web apps using Java, Spring Boot, MySQL, and JS.</li>
+          <li>Strengthened teamwork and problem-solving in a real-world setting.</li>
+        </ul>
+        <div class="technologies">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
+  </section>
+</body>
+<!-- experience section -->
 
   <!-- Technologies Section -->  
 <div class="technologies-container">
@@ -1087,12 +1194,12 @@
 <!-- scrool up arrow button -->
 
 <!-- Copyright Text -->
-  <p class="footer-text">Akram Shaik © 2024</p>
+    <p class="footer-text">Akram Shaik © 2024</p>
 <!-- Go to Top Button with SVG Icon -->
-<head>
-  <title>Go to Top Button</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <title>Go to Top Button</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
 </body>
 </html>
